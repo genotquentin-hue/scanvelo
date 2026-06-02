@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "id": "m2402829071",
+    "source": "2ememain",
+    "title": "Cannondale topstone xl",
+    "description": "Interesse peiling wegens einde fiets leasing : gravelbike cannondale topstone. Ongeveer 5000 km gereden. Maat xl voor personen vanaf 1.85M. Onmiddelijk beschikbaar!",
+    "price_cents": 0,
+    "price_type": "FAST_BID",
+    "price_raw": "Prix à débattre",
+    "location": "Zemst",
+    "latitude": 50.979777942695,
+    "longitude": 4.4338044354948,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2402829071-cannondale-topstone-xl",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/7d12b47c-1391-4294-a5d6-87f628cf016a?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "23 mai 26",
+    "seen_at": "2026-06-02T20:16:23.998858+00:00"
+  },
+  {
+    "id": "m2260385743",
+    "source": "2ememain",
+    "title": "2 vélos + accessoires (casques, phares, antivols, gants, etc",
+    "description": "2 vélos à vendre : 1. Bergamont grandurance 6, neuf, jamais utilisé, 1500 eur 2. Sirocco avenue v-break 8 vitesses - utilisé, 300 eur possibles avec accessoires : casque abus, porte-vélo mural neuf, g",
+    "price_cents": 0,
+    "price_type": "SEE_DESCRIPTION",
+    "price_raw": "Prix à débattre",
+    "location": "Ixelles",
+    "latitude": 50.821268777237,
+    "longitude": 4.3770554188878,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2260385743-2-velos-accessoires-casques-phares-antivols-gants-etc",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/f0/f0ebd2db-3b03-4b86-b94b-b261f528790f?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "22 avr. 25",
+    "seen_at": "2026-06-02T20:16:23.998858+00:00"
+  },
+  {
+    "id": "m2404820788",
+    "source": "2ememain",
+    "title": "Specialized Diverge Sport carbon",
+    "description": "Mag eventueel wegens te weinig gebruik. Maat 56 sram apex kan verkocht worden inclusief carbon wielset zoals op foto 1,2,4. Wielset foto 3 zijn fore five crd inclusief tubeless banden. Prijs met origi",
+    "price_cents": 0,
+    "price_type": "SEE_DESCRIPTION",
+    "price_raw": "Prix à débattre",
+    "location": "Kapelle-Op-Den-Bos En Deel Van Zemst",
+    "latitude": 51.0036593552,
+    "longitude": 4.3546499109098,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2404820788-specialized-diverge-sport-carbon",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/ca02056f-299e-4734-9542-3a1c61fd4900?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "29 mai 26",
+    "seen_at": "2026-06-02T20:16:23.998858+00:00"
+  }
+]

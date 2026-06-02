@@ -1,0 +1,57 @@
+name: Bike Monitor
+
+# Les heures cron sont en UTC. Bruxelles = UTC+1 (hiver) / UTC+2 (été).
+on:
+  schedule:
+    # Scraping toutes les 30 min, ~7h–22h heure belge (6h–21h UTC)
+    - cron: "*/30 6-21 * * *"
+    # Récap quotidien : 6h UTC = 8h Bruxelles (été)
+    - cron: "0 6 * * *"
+  workflow_dispatch:        # permet de lancer manuellement depuis l'onglet Actions
+
+# Évite que deux exécutions tournent en même temps (sinon conflits de git push).
+concurrency:
+  group: bike-monitor
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # nécessaire pour committer seen_ids.json / recent.json
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      # On choisit l'action selon l'heure : à 6h UTC pile → récap, sinon scraping.
+      # github.event.schedule contient l'expression cron qui a déclenché le run.
+      - name: Scraping + alertes Telegram
+        if: github.event.schedule != '0 6 * * *'
+        run: python main.py
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Récap quotidien par email
+        if: github.event.schedule == '0 6 * * *'
+        run: python recap.py
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_TO: ${{ secrets.GMAIL_TO }}
+
+      - name: Committer les annonces vues (si changement)
+        run: |
+          git config user.name "bike-monitor[bot]"
+          git config user.email "bike-monitor@users.noreply.github.com"
+          git add data/seen_ids.json data/recent.json
+          # git commit échoue s'il n'y a rien à committer → on l'ignore proprement
+          git diff --cached --quiet || git commit -m "chore: mise à jour des annonces vues"
+          git push

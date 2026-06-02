@@ -1,0 +1,11 @@
+# Secrets — ne jamais commiter
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs locaux (seen_ids.json et recent.json sont commités, eux)
+data/*.log

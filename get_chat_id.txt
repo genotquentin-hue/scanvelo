@@ -1,0 +1,1 @@
+curl -s "https://api.telegram.org/botTON_TOKEN/getUpdates" | python3 -c "import sys,json; r=json.load(sys.stdin)['result']; print(r[-1]['message']['chat']['id'] if r else 'Pas de message')"

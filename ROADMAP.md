@@ -14,21 +14,26 @@ Le code et l'architecture sont décrits dans `CLAUDE.md` et `README.md`.
 - [x] Workflow GitHub Actions (`.github/workflows/scraper.yml`)
 - [x] Dépôt git initialisé et poussé sur https://github.com/genotquentin-hue/scanvelo (privé)
 
-## 🔲 À faire — configuration des accès
+## ✅ Configuration des accès (fait)
 
 ### 1. Bot Telegram (pour les alertes instantanées)
-- [ ] Créer le bot via `@BotFather` sur Telegram → `/newbot` → récupérer le **token** (`TELEGRAM_TOKEN`)
-- [ ] Envoyer un message au bot depuis ton compte Telegram (obligatoire)
-- [ ] Récupérer le **chat_id** (`TELEGRAM_CHAT_ID`) avec cette commande (remplacer le token) :
-      ```
-      curl -s "https://api.telegram.org/bot<TON_TOKEN>/getUpdates" | python3 -c "import sys,json; print(json.load(sys.stdin)['result'][-1]['message']['chat']['id'])"
-      ```
+- [x] Créer le bot via `@BotFather` sur Telegram → `/newbot` → token récupéré
+- [x] Envoyer un message au bot depuis Telegram
+- [x] Récupérer le **chat_id** via l'API Telegram
 
 ### 2. Email Gmail (pour le récap quotidien)
-- [ ] Activer la validation en 2 étapes sur le compte Google
-- [ ] Générer un **App Password** : https://myaccount.google.com/apppasswords → valeur `GMAIL_APP_PASSWORD`
+- [x] Activer la validation en 2 étapes sur Google
+- [x] Générer un **App Password** : https://myaccount.google.com/apppasswords
 
-### 3. Secrets GitHub Actions
+### 3. Configuration locale
+- [x] Remplir le `.env` local avec token, chat_id, app password
+- [x] `python3 main.py --dry-run` ✓ (245 annonces → 3 pertinentes)
+- [x] `python3 main.py` ✓ (scrape + persiste, 0 nouvelle annonce car déjà vues)
+- [x] Modifier `config.py` pour charger le `.env` sans dépendre de `python-dotenv`
+
+## 🔲 À faire — GitHub Actions
+
+### 4. Secrets GitHub Actions
 Dans le dépôt : **Settings → Secrets and variables → Actions → New repository secret**
 - [ ] `TELEGRAM_TOKEN`
 - [ ] `TELEGRAM_CHAT_ID`
@@ -36,11 +41,10 @@ Dans le dépôt : **Settings → Secrets and variables → Actions → New repos
 - [ ] `GMAIL_APP_PASSWORD`
 - [ ] `GMAIL_TO` = `genot.quentin@gmail.com`
 
-### 4. Test de bout en bout
-- [ ] Remplir un fichier `.env` local (copier `.env.example`) avec les mêmes valeurs
-- [ ] `python3 main.py --dry-run` puis `python3 main.py` → vérifier une alerte Telegram reçue
-- [ ] `python3 recap.py` → vérifier l'email reçu
+### 5. Test du workflow
 - [ ] Sur GitHub : onglet **Actions** → lancer le workflow manuellement (**Run workflow**) pour valider en conditions réelles
+- [ ] Vérifier une alerte Telegram reçue
+- [ ] Vérifier l'email récap reçu le lendemain (6h UTC)
 
 ## 🛠 Confort (optionnel)
 - [ ] Éviter de retaper le token à chaque `git push` : configurer SSH **ou** un credential helper git

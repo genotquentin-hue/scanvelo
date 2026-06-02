@@ -7,15 +7,15 @@ import os
 from pathlib import Path
 
 # Charge les variables du fichier .env dans os.environ.
-# En local : lit le fichier .env. Sur GitHub Actions : le .env n'existe pas,
-# mais les secrets sont déjà dans os.environ → load_dotenv ne casse rien.
-# L'import est optionnel : si python-dotenv n'est pas installé, on continue
-# avec les variables d'environnement déjà présentes.
-try:
-    from dotenv import load_dotenv
-    load_dotenv()
-except ImportError:
-    pass
+# Lecture manuelle du .env pour éviter la dépendance à python-dotenv.
+env_path = Path(__file__).parent / ".env"
+if env_path.exists():
+    with open(env_path) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, value = line.split("=", 1)
+                os.environ.setdefault(key.strip(), value.strip())
 
 # --- Chemins ---
 BASE_DIR = Path(__file__).parent

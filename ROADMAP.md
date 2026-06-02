@@ -31,20 +31,23 @@ Le code et l'architecture sont décrits dans `CLAUDE.md` et `README.md`.
 - [x] `python3 main.py` ✓ (scrape + persiste, 0 nouvelle annonce car déjà vues)
 - [x] Modifier `config.py` pour charger le `.env` sans dépendre de `python-dotenv`
 
-## 🔲 À faire — GitHub Actions
+## ✅ GitHub Actions (fait)
 
 ### 4. Secrets GitHub Actions
-Dans le dépôt : **Settings → Secrets and variables → Actions → New repository secret**
-- [ ] `TELEGRAM_TOKEN`
-- [ ] `TELEGRAM_CHAT_ID`
-- [ ] `GMAIL_USER` = `genot.quentin@gmail.com`
-- [ ] `GMAIL_APP_PASSWORD`
-- [ ] `GMAIL_TO` = `genot.quentin@gmail.com`
+- [x] `TELEGRAM_TOKEN`
+- [x] `TELEGRAM_CHAT_ID`
+- [x] `GMAIL_USER` = `genot.quentin@gmail.com`
+- [x] `GMAIL_APP_PASSWORD`
+- [x] `GMAIL_TO` = `genot.quentin@gmail.com`
 
 ### 5. Test du workflow
-- [ ] Sur GitHub : onglet **Actions** → lancer le workflow manuellement (**Run workflow**) pour valider en conditions réelles
-- [ ] Vérifier une alerte Telegram reçue
-- [ ] Vérifier l'email récap reçu le lendemain (6h UTC)
+- [x] Workflow testé manuellement (**Actions → Run workflow**)
+- [x] Exécution réussie sur GitHub Actions
+- [x] Fichiers `seen_ids.json` et `recent.json` mis à jour et poussés automatiquement
+
+**🚀 Bot opérationnel !**
+- Scraping : **toutes les 30 min** (6h–21h UTC) → alertes Telegram si nouvelles annonces
+- Récap email : **chaque jour à 6h UTC** (8h Bruxelles)
 
 ## 🛠 Confort (optionnel)
 - [ ] Éviter de retaper le token à chaque `git push` : configurer SSH **ou** un credential helper git

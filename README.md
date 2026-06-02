@@ -51,3 +51,4 @@ notifier.py     # envoi Telegram + email
 main.py         # exécution du scraping + alertes
 recap.py        # récap quotidien par email
 ```
+# scanvelo

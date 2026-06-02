@@ -58,6 +58,12 @@ Le code et l'architecture sont décrits dans `CLAUDE.md` et `README.md`.
 - [ ] Affiner la fourchette de prix dans `config.py` une fois le marché mieux connu
 - [ ] Ajuster les heures du cron dans le workflow (actuellement en UTC)
 
+## ⚠️ Problèmes identifiés
+
+### 🔴 Telegram
+- **Token invalide** : erreur 401 lors de l'envoi (Unauthorized)
+- À faire : vérifier/régénérer le token dans GitHub secrets → `TELEGRAM_TOKEN`
+
 ## ⚠️ Notes
 - Le token GitHub utilisé pour le 1er push doit avoir les scopes **`repo` + `workflow`**.
 - Un token a été collé en clair dans un chat puis régénéré → l'ancien est invalide.

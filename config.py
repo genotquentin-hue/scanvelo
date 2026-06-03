@@ -46,6 +46,9 @@ SEARCH_KEYWORDS = [
     "orbea terra",
     "ridley kanzo",
     "breezer doppler",
+    "orbea vector",
+    "bergamont sweep",
+    "principia of denmark gravelh",
 ]
 
 # --- Fourchette de prix (en centimes d'euro) ---

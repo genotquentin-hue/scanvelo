@@ -51,10 +51,10 @@ Le code et l'architecture sont décrits dans `CLAUDE.md` et `README.md`.
 
 ### 6. Fiabilité du déclenchement (fait en partie)
 - [x] Cron GitHub Actions simplifié : `0 7-20 * * *` (backup horaire)
-- [ ] Créer un PAT GitHub (fine-grained, Actions read/write, repo `scanvelo`)
-- [ ] Configurer cron-job.org : POST vers l'API GitHub toutes les heures (8h–21h Bruxelles)
+- [x] Créer un PAT GitHub (fine-grained, Actions read/write, repo `scanvelo`)
+- [x] Configurer cron-job.org : POST vers l'API GitHub toutes les heures (8h–21h Bruxelles)
       URL : `https://api.github.com/repos/genotquentin-hue/scanvelo/actions/workflows/scraper.yml/dispatches`
-      Body : `{"ref":"main"}` — Headers : `Authorization`, `Accept`, `X-GitHub-Api-Version`
+      Body : `{"ref":"main"}` — Headers : `Authorization`, `Accept`, `X-GitHub-Api-Version`, `Content-Type`
 
 ## 🛠 Confort (optionnel)
 - [ ] Éviter de retaper le token à chaque `git push` : configurer SSH **ou** un credential helper git

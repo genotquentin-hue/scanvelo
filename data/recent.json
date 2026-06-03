@@ -66,5 +66,39 @@
     "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/9f280af0-1a04-4d79-99fd-31b8965d8222?rule=ecg_mp_eps$_82.jpg",
     "posted_at": "Aujourd'hui",
     "seen_at": "2026-06-03T11:21:44.357547+00:00"
+  },
+  {
+    "id": "m2406754885",
+    "source": "2ememain",
+    "title": "Vélo Ridley Kanzo A Gravel",
+    "description": "Mon fils veut vendre son gravelbike pour acheter un vtt. Vélo cool, très bien. Bien entretenu. Signes d&#39;usure, voir photos. Taille : s",
+    "price_cents": 0,
+    "price_type": "FAST_BID",
+    "price_raw": "Prix à débattre",
+    "location": "Meise + Deel Van Brussegem",
+    "latitude": 50.943274987017,
+    "longitude": 4.3253744920866,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2406754885-velo-ridley-kanzo-a-gravel",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/17843dc7-960d-44f7-9569-ccf1f8514584?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "seen_at": "2026-06-03T17:03:26.810545+00:00"
+  },
+  {
+    "id": "m2406743400",
+    "source": "2ememain",
+    "title": "SCOTT Speedster gravel 20 Taille M",
+    "description": "Beau vélo en bon état, cadre en aluminium, fourche avant en carbone, vitesses mécaniques shimano 105 2x11, plateforme 50x34, cassette 11x34, freins à disque hydrauliques, deuxième jeu de roues. Rareme",
+    "price_cents": 100000,
+    "price_type": "FIXED",
+    "price_raw": "1000 €",
+    "location": "Steenokkerzeel",
+    "latitude": 50.921036642352,
+    "longitude": 4.4992850068233,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2406743400-scott-speedster-gravel-20-taille-m",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/d7bce568-dffd-4cd3-b404-1a5913c8a038?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "seen_at": "2026-06-03T17:03:26.810545+00:00"
   }
 ]

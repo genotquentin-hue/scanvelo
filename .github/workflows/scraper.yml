@@ -3,8 +3,8 @@ name: Bike Monitor
 # Les heures cron sont en UTC. Bruxelles = UTC+1 (hiver) / UTC+2 (été).
 on:
   schedule:
-    # Scraping toutes les 30 min, ~7h–22h heure belge (6h–21h UTC)
-    - cron: "*/30 6-21 * * *"
+    # Scraping toutes les heures en backup (cron-job.org est le déclencheur principal)
+    - cron: "0 7-20 * * *"
   workflow_dispatch:        # permet de lancer manuellement depuis l'onglet Actions
 
 # Évite que deux exécutions tournent en même temps (sinon conflits de git push).

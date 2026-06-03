@@ -1,0 +1,33 @@
+name: Récap quotidien
+
+# Les heures cron sont en UTC. Bruxelles = UTC+1 (hiver) / UTC+2 (été).
+on:
+  schedule:
+    # 6h UTC = 8h Bruxelles (été)
+    - cron: "0 6 * * *"
+  workflow_dispatch:        # permet de déclencher manuellement depuis l'onglet Actions
+
+concurrency:
+  group: bike-monitor
+  cancel-in-progress: false
+
+jobs:
+  recap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Récap quotidien par email
+        run: python recap.py
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_TO: ${{ secrets.GMAIL_TO }}

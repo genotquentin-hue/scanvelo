@@ -48,7 +48,7 @@ SEARCH_KEYWORDS = [
     "breezer doppler",
     "orbea vector",
     "bergamont sweep",
-    "principia of denmark gravelh",
+    "principia gravel h10",
 ]
 
 # --- Fourchette de prix (en centimes d'euro) ---

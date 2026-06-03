@@ -58,6 +58,19 @@ Le code et l'architecture sont décrits dans `CLAUDE.md` et `README.md`.
 - [ ] Affiner la fourchette de prix dans `config.py` une fois le marché mieux connu
 - [ ] Ajuster les heures du cron dans le workflow (actuellement en UTC)
 
+### Favoris & suivi des annonces
+- [ ] Fichier `data/favorites.txt` (une URL par ligne, note libre en commentaire `# contacté`)
+      → section "Suivies" dans le récap email, indépendante de la fenêtre 24h
+- [ ] Lien "Sauvegarder" dans les alertes Telegram et le récap email
+      → ouvre directement l'édition du fichier sur GitHub (2 clics)
+
+### Page HTML de suivi (tableau de bord)
+- [ ] GitHub Actions génère un `report.html` à chaque scraping et le committe
+- [ ] Hébergé sur **GitHub Pages** (repo privé → gratuit avec GitHub Pro ~4€/mois,
+      ou repo public avec balise `noindex` pour rester discret)
+- [ ] Favoris et statuts (contacté / en attente / acheté) stockés en `localStorage`
+      → pas de backend nécessaire
+
 ## ⚠️ Notes
 - Le token GitHub utilisé pour le 1er push doit avoir les scopes **`repo` + `workflow`**.
 - Un token a été collé en clair dans un chat puis régénéré → l'ancien est invalide. Token régénéré via @BotFather et mis à jour dans `.env` + secret GitHub Actions (2026-06-02).

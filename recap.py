@@ -46,6 +46,7 @@ def main(dry_run: bool = False) -> None:
         print("✓ récap envoyé par email")
     else:
         print("✗ échec de l'envoi du récap")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

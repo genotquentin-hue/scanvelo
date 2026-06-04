@@ -7,10 +7,6 @@ on:
     - cron: "0 6 * * *"
   workflow_dispatch:        # permet de déclencher manuellement depuis l'onglet Actions
 
-concurrency:
-  group: bike-monitor
-  cancel-in-progress: false
-
 jobs:
   recap:
     runs-on: ubuntu-latest

@@ -40,5 +40,17 @@ jobs:
           git config user.email "bike-monitor@users.noreply.github.com"
           git add data/seen_ids.json data/recent.json
           # git commit échoue s'il n'y a rien à committer → on l'ignore proprement
-          git diff --cached --quiet || git commit -m "chore: mise à jour des annonces vues"
-          git push
+          if git diff --cached --quiet; then
+            echo "Rien à committer."
+            exit 0
+          fi
+          git commit -m "chore: mise à jour des annonces vues"
+          # Le distant peut avoir avancé depuis le checkout : on rebase puis on pousse,
+          # avec quelques tentatives en cas de course (push non-fast-forward).
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "Push refusé (tentative $i), nouvelle tentative…"
+            sleep 5
+          done
+          echo "Échec du push après 5 tentatives." >&2
+          exit 1

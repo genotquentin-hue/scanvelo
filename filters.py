@@ -89,10 +89,15 @@ def has_size_m(listing: dict) -> bool:
     return bool(SIZE_M_RE.search(text))
 
 
-def passes_filters(listing: dict) -> bool:
-    """Combine les filtres bloquants : localisation ET prix.
+WOMEN_URL_SEGMENTS = ("velos-femmes", "velos-dames", "damesfiets")
 
-    La taille n'est PAS un filtre bloquant (beaucoup d'annonces ne la
-    précisent pas) — on l'affiche seulement dans la notification.
-    """
-    return passes_location(listing) and passes_price(listing)
+
+def passes_gender(listing: dict) -> bool:
+    """Écarte les vélos clairement catégorisés femmes via l'URL du site."""
+    url = listing.get("url", "")
+    return not any(seg in url for seg in WOMEN_URL_SEGMENTS)
+
+
+def passes_filters(listing: dict) -> bool:
+    """Combine les filtres bloquants : localisation ET prix ET genre."""
+    return passes_location(listing) and passes_price(listing) and passes_gender(listing)

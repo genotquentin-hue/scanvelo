@@ -118,6 +118,9 @@ ANALYSE_CRITERES = """Tu analyses des annonces de vélos d'occasion pour un ache
 
 Son besoin : un vélo polyvalent pour le vélotaf quotidien en ville et des balades
 le week-end (gravel, commute, hybride). Budget max 1000 €. État correct exigé.
+Taille du cycliste : 173 cm → taille cadre M (ou équivalent : 54cm, 56cm selon le type).
+Si l'annonce mentionne explicitement une autre taille (S, L, XL, 50cm, 58cm+),
+baisser le score. Si la taille n'est pas mentionnée, ne pas pénaliser.
 
 Critères pour GARDER une annonce (garder=true) :
 - Vélo entier en état roulant (pas de pièces détachées, pas de cadre nu)

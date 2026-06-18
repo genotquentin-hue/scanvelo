@@ -118,34 +118,40 @@ ANALYSE_CRITERES = """Tu analyses des annonces de vélos d'occasion pour un ache
 
 Profil de l'acheteur :
 - Homme, 173 cm → taille cadre M (54-56 cm selon le type de vélo)
-- Usage : vélotaf quotidien ~11 km/jour en ville + balades gravel occasionnelles le week-end
+- Usage principal : vélotaf ~11 km/jour sur pistes cyclables et pavés bruxellois
+- Usage secondaire : balades gravel le week-end (chemins mixtes)
+- Stockage : cave/garage sécurisé (pas de contrainte de poids)
+- Style préféré : gravel avec guidon drop (polyvalent route + chemin)
+  → hybride à guidon plat acceptable mais score réduit
 - Budget max : 1000 €
-- Critère bonus : vélo facilement revendable (marque connue, modèle populaire)
+- Ouvert à toutes les marques si la qualité est au rendez-vous
 
-Critères pour ÉCARTER une annonce (garder=false) :
-- Vélo électrique ou à assistance électrique (VAE, e-bike, moteur, batterie mentionnés)
-- Vélo explicitement pour femme (géométrie step-through, cadre "mixte dame", coloris
-  typiquement féminins mentionnés comme tels, taille XS ou S féminin)
-- Pièces détachées ou cadre nu (pas un vélo complet)
-- Signaux rédhibitoires : rouille importante, accident mentionné, fourche tordue,
-  cadre fissuré, pièces manquantes essentielles
-- Taille incompatible explicitement mentionnée (S, XS, L, XL, 58cm+, 50cm-)
+Critères pour ÉCARTER (garder=false) :
+- Vélo électrique / VAE / e-bike (moteur, batterie mentionnés)
+- Vélo explicitement pour femme (WSD, step-through, "dame", coloris féminins assumés, taille XS/S féminin)
+- Pièces détachées ou cadre nu
+- Signaux rédhibitoires : rouille importante, accident, fourche tordue, cadre fissuré, pièces manquantes essentielles
+- Taille incompatible explicitement mentionnée (S, XS, L, XL, 58 cm+, 50 cm-)
 - VTT descente, vélo de route de compétition pure, vélo enfant
-- État clairement mauvais ("à réparer", "pour pièces", "ne fonctionne pas")
+- État mauvais ("à réparer", "pour pièces", "ne fonctionne pas")
 
-Si la taille n'est pas mentionnée : ne pas pénaliser.
-Si l'annonce est ambiguë sur le genre : garder (bénéfice du doute).
+Si la taille n'est pas mentionnée → ne pas pénaliser.
+Si le genre est ambigu → garder (bénéfice du doute).
 
-Score (0-100) : adéquation globale. 80+ = excellent match.
-Bonus score (+5 à +10) si le modèle est reconnu comme facilement revendable
-(ex : Trek, Specialized, Canyon, Giant sur des modèles populaires).
+Score (0-100) — bonus appliquer dans l'ordre :
++10 : freins à disque hydraulique (essentiel sous la pluie bruxelloise)
++5  : pneus larges 35 mm+ (confort sur pavés)
++5  : porte-bagages ou compatibilité porte-bagages (bonus vélotaf)
++5  : modèle très revendable (Trek, Specialized, Canyon, Giant, Cannondale sur modèles courants)
+-10 : freins à patins uniquement (rim brake) — pénalité pluie
+-5  : hybride à guidon plat (fonctionnel mais moins polyvalent que souhaité)
 
-raison : une phrase expliquant pourquoi tu gardes ou écartes l'annonce.
+raison : une phrase expliquant pourquoi tu gardes ou écartes.
 
-conseil : 1-2 phrases de conseiller d'achat honnête. Inclus :
-- estimation du prix neuf et si le prix demandé est une bonne affaire
-- un point d'attention concret si pertinent (composants à vérifier, négociation…)
-- mention de la revendabilité si le modèle est un bon investissement
-- ton verdict final : "bonne affaire", "prix correct", "trop cher", "à négocier"
+conseil : 2-3 phrases de conseiller d'achat honnête :
+- Prix neuf estimé du modèle et verdict sur le prix demandé
+- Point d'attention concret (composant à vérifier, état à confirmer, négociation possible)
+- Revendabilité si pertinente
+- Verdict final : "bonne affaire", "prix correct", "trop cher", "à négocier", "éviter"
 
 Réponds uniquement avec le JSON demandé, en français."""

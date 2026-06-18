@@ -18,7 +18,7 @@ from analyzer import analyze_listing
 from filters import passes_filters
 from notifier import send_telegram
 from scraper.deuxiememain import DeuxiememainScraper
-from store import add_recent, load_seen_ids, save_seen_ids, update_top5
+from store import add_recent, load_seen_ids, load_top5, save_seen_ids, update_top5
 
 # Liste des scrapers actifs. Pour ajouter marktplaats plus tard : une ligne ici.
 SCRAPERS = [DeuxiememainScraper]
@@ -65,7 +65,31 @@ def main(dry_run: bool = False) -> None:
             print(f"  • {l['title']} — {l.get('price_raw')} — {l.get('location')}")
             print(f"    {l['url']}{conseil}")
 
-    # 6. Mise à jour du top 5 (vérifie les URL encore en ligne + ajoute les nouvelles)
+    # 6. Bootstrap top5 si nécessaire : analyse les annonces déjà vues mais absentes du top5
+    # (sans les notifier sur Telegram — elles sont déjà connues)
+    current_top5_ids = {l["id"] for l in load_top5()}
+    kept_ids = {l["id"] for l in kept_listings}
+    needed = 5 - len(current_top5_ids) - len(kept_ids)
+    if needed > 0:
+        already_seen = [l for l in relevant if l["id"] not in kept_ids and l["id"] not in current_top5_ids]
+        if already_seen:
+            print(f"\n[bootstrap top5] {len(already_seen)} annonce(s) à analyser pour remplir le top5…")
+        for l in already_seen:
+            verdict = analyze_listing(l)
+            garder = True if verdict is None else verdict["garder"]
+            l["_analyse"] = verdict
+            if garder:
+                kept_listings.append(l)
+                kept_ids.add(l["id"])
+                needed -= 1
+            if dry_run:
+                tag = "✓ top5" if garder else "✗ écarté"
+                score = f" {verdict['score']}/100" if verdict else ""
+                print(f"  [bootstrap {tag}{score}] {l['title']}")
+            if needed <= 0:
+                break
+
+    # 7. Mise à jour du top5 (vérifie les URL encore en ligne + ajoute les nouvelles)
     update_top5(kept_listings, dry_run=dry_run)
 
     if dry_run:

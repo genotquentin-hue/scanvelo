@@ -57,9 +57,10 @@ def main(dry_run: bool = False) -> None:
             tag = "✓ GARDER" if garder else "✗ écarté"
             score = f" {verdict['score']}/100" if verdict else " (pas d'analyse)"
             raison = f" — {verdict['raison']}" if verdict else ""
+            conseil = f"\n    💡 {verdict['conseil']}" if verdict else ""
             print(f"  [{tag}{score}]{raison}")
             print(f"  • {l['title']} — {l.get('price_raw')} — {l.get('location')}")
-            print(f"    {l['url']}")
+            print(f"    {l['url']}{conseil}")
         elif garder:
             to_notify.append(l)
 

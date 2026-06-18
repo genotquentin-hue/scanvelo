@@ -63,7 +63,10 @@ def _format_telegram(listing: dict) -> str:
     analyse = listing.get("_analyse")
     analyse_str = ""
     if analyse:
-        analyse_str = f"\n🤖 Sélection IA : {analyse['score']}/100 — {escape(analyse['raison'])}"
+        analyse_str = (
+            f"\n🤖 {analyse['score']}/100 — {escape(analyse['raison'])}"
+            f"\n💡 {escape(analyse['conseil'])}"
+        )
 
     return (
         f"🚲 <b>Nouveau vélo</b>\n\n"

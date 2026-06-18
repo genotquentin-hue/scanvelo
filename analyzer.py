@@ -9,8 +9,9 @@ try:
 
     class Verdict(BaseModel):
         garder: bool
-        score: int    # 0-100, adéquation globale
-        raison: str   # une phrase courte en français
+        score: int     # 0-100, adéquation globale
+        raison: str    # pourquoi garder ou écarter (une phrase)
+        conseil: str   # conseil d'achat : prix vs neuf, points d'attention, verdict final
 
     _ANTHROPIC_AVAILABLE = True
 except ImportError:
@@ -44,7 +45,7 @@ def analyze_listing(listing: dict) -> dict | None:
             output_format=Verdict,
         )
         v = response.parsed_output
-        return {"garder": v.garder, "score": v.score, "raison": v.raison}
+        return {"garder": v.garder, "score": v.score, "raison": v.raison, "conseil": v.conseil}
     except Exception as e:
         print(f"  [warn] analyse IA échouée → fail-safe (notif quand même) : {e}")
         return None

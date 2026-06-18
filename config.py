@@ -30,6 +30,7 @@ RECENT_RETENTION_HOURS = 48
 # --- Mots-clés de recherche ---
 # Chaque entrée devient une recherche distincte sur le site.
 SEARCH_KEYWORDS = [
+    # --- Gravel ---
     "van rysel grvl",
     "kona rove",
     "trek checkpoint",
@@ -39,16 +40,33 @@ SEARCH_KEYWORDS = [
     "giant revolt",
     "cannondale topstone",
     "scott speedster gravel",
-    "cube nuroad",
+    "cube cross race",
     "fuji jari",
     "focus atlas",
     "bergamont grandurance",
     "orbea terra",
     "ridley kanzo",
+    "merida silex",
+    "gt grade",
+    "genesis croix de fer",
+    "vitus energie",
+    "rose backroad",
+    "felt vr",
+    "ghost asket gravel",
+    "principia gravel h10",
+    # --- Commute / hybride ---
+    "cube nuroad",
     "breezer doppler",
     "orbea vector",
     "bergamont sweep",
-    "principia gravel h10",
+    "marin four corners",
+    "trek fx",
+    "giant toughroad",
+    "giant escape",
+    "specialized crosstrail",
+    "decathlon triban",
+    "koga roadster",
+    "tout terrain silkroad",
 ]
 
 # --- Fourchette de prix (en centimes d'euro) ---
@@ -109,4 +127,12 @@ Critères pour GARDER une annonce (garder=true) :
 
 Score (0-100) : adéquation globale au besoin. 80+ = excellent match.
 
-Réponds avec le verdict JSON demandé. Raison en une phrase concise en français."""
+raison : une phrase expliquant pourquoi tu gardes ou écartes l'annonce.
+
+conseil : 1-2 phrases de conseiller d'achat honnête. Inclus :
+- estimation du prix neuf de ce modèle et si le prix demandé est une bonne affaire
+- un point d'attention concret s'il y en a (composants à vérifier, négociation possible…)
+- ton verdict final en une expression courte (ex : "bonne affaire", "prix correct",
+  "trop cher pour l'état", "à négocier")
+
+Réponds uniquement avec le JSON demandé, en français."""

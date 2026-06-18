@@ -14,6 +14,7 @@ Usage :
 """
 import sys
 
+from analyzer import analyze_listing
 from filters import passes_filters
 from notifier import send_telegram
 from scraper.deuxiememain import DeuxiememainScraper
@@ -42,24 +43,36 @@ def main(dry_run: bool = False) -> None:
     new_listings = [l for l in relevant if l["id"] not in seen_ids]
     print(f"{len(new_listings)} nouvelle(s) annonce(s)")
 
-    if dry_run:
-        print("\n[DRY-RUN] Annonces qui seraient notifiées :")
-        for l in new_listings:
-            print(f"  • {l['title']} — {l['price_raw']} — {l.get('location')}")
-            print(f"    {l['url']}")
-        return
+    # 5. Analyse IA + notifications
+    to_notify: list[dict] = []
 
-    # 5. Notifications Telegram
     for l in new_listings:
-        if send_telegram(l):
-            print(f"  ✓ notifié : {l['title']}")
-        # On ajoute l'ID aux "vus" même si la notif échoue, pour éviter de
-        # spammer la même annonce en boucle au run suivant. (Compromis simple.)
+        verdict = analyze_listing(l)
+        garder = True if verdict is None else verdict["garder"]
+        l["_analyse"] = verdict
+        # L'ID est marqué "vu" même si écarté : évite de re-payer l'analyse au run suivant.
         seen_ids.add(l["id"])
 
+        if dry_run:
+            tag = "✓ GARDER" if garder else "✗ écarté"
+            score = f" {verdict['score']}/100" if verdict else " (pas d'analyse)"
+            raison = f" — {verdict['raison']}" if verdict else ""
+            print(f"  [{tag}{score}]{raison}")
+            print(f"  • {l['title']} — {l.get('price_raw')} — {l.get('location')}")
+            print(f"    {l['url']}")
+        elif garder:
+            to_notify.append(l)
+
+    if dry_run:
+        return
+
+    for l in to_notify:
+        if send_telegram(l):
+            print(f"  ✓ notifié : {l['title']}")
+
     # 6. Persistance
-    if new_listings:
-        add_recent(new_listings)
+    if to_notify:
+        add_recent(to_notify)
     save_seen_ids(seen_ids)
     print("\nTerminé.")
 

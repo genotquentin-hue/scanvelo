@@ -54,7 +54,7 @@ SEARCH_KEYWORDS = [
 # --- Fourchette de prix (en centimes d'euro) ---
 # On stocke en centimes pour éviter les erreurs d'arrondi des floats.
 MIN_PRICE_CENTS = 50_000   # 500 €
-MAX_PRICE_CENTS = 120_000  # 1200 €
+MAX_PRICE_CENTS = 100_000  # 1000 €
 
 # --- Villes dans ~20km de Bruxelles ---
 # Le filtre de distance du site est appliqué en JavaScript (invisible en HTTP),
@@ -88,3 +88,25 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 GMAIL_USER = os.environ.get("GMAIL_USER", "")
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
 GMAIL_TO = os.environ.get("GMAIL_TO", "")
+
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+
+# --- Analyse IA ---
+ANALYSE_MODEL = "claude-haiku-4-5"
+
+ANALYSE_CRITERES = """Tu analyses des annonces de vélos d'occasion pour un acheteur bruxellois.
+
+Son besoin : un vélo polyvalent pour le vélotaf quotidien en ville et des balades
+le week-end (gravel, commute, hybride). Budget max 1000 €. État correct exigé.
+
+Critères pour GARDER une annonce (garder=true) :
+- Vélo entier en état roulant (pas de pièces détachées, pas de cadre nu)
+- Pas de signaux rédhibitoires : rouille importante, accident mentionné, fourche
+  tordue, cadre fissuré, pièces manquantes essentielles (roues, freins, guidon)
+- Adapté à un usage mixte ville/chemin (gravel, hybride, trekking, cyclocross,
+  commute) — exclure vélos de route pure, VTT descente, vélos enfants
+- Prix cohérent avec l'état décrit (méfiance si prix très bas + état douteux)
+
+Score (0-100) : adéquation globale au besoin. 80+ = excellent match.
+
+Réponds avec le verdict JSON demandé. Raison en une phrase concise en français."""

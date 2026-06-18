@@ -60,12 +60,18 @@ def _format_telegram(listing: dict) -> str:
     dist_str = f" (~{dist:.0f} km)" if dist is not None else ""
     size_str = "\n📏 Taille M mentionnée" if has_size_m(listing) else ""
 
+    analyse = listing.get("_analyse")
+    analyse_str = ""
+    if analyse:
+        analyse_str = f"\n🤖 Sélection IA : {analyse['score']}/100 — {escape(analyse['raison'])}"
+
     return (
         f"🚲 <b>Nouveau vélo</b>\n\n"
         f"🏷 {title}\n"
         f"💰 {price}\n"
         f"📍 {city}{dist_str}"
-        f"{size_str}\n\n"
+        f"{size_str}"
+        f"{analyse_str}\n\n"
         f'🔗 <a href="{escape(url)}">Voir l\'annonce</a>'
     )
 

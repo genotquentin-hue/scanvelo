@@ -152,6 +152,7 @@
         <div class="card-meta">
           <span>💰 ${l.price_raw || '?'}</span>
           ${l.location ? `<span>📍 ${l.location}</span>` : ''}
+          ${l.posted_at ? `<span>📅 ${l.posted_at}</span>` : ''}
         </div>
         ${l.conseil ? `<div class="conseil">💡 ${l.conseil}</div>` : ''}
       </div>
@@ -179,7 +180,8 @@
           <div class="card-meta">
             <span>💰 ${l.price_raw || '?'}</span>
             ${l.location ? `<span>📍 ${l.location}</span>` : ''}
-            ${seenAt ? `<span>🕐 ${seenAt}</span>` : ''}
+            ${l.posted_at ? `<span>📅 ${l.posted_at}</span>` : ''}
+            ${seenAt ? `<span>🕐 détecté ${seenAt}</span>` : ''}
           </div>
           ${conseil}
         </div>`;

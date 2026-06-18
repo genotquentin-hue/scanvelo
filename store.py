@@ -128,6 +128,7 @@ def update_top5(new_kept: list[dict], dry_run: bool = False) -> None:
                 "price_raw": l.get("price_raw", ""),
                 "location": l.get("location", ""),
                 "url": l.get("url", ""),
+                "posted_at": l.get("posted_at", ""),
                 "score": analyse.get("score", 0),
                 "raison": analyse.get("raison", ""),
                 "conseil": analyse.get("conseil", ""),

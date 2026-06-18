@@ -1,1 +1,89 @@
-[]
+[
+  {
+    "id": "m2411916011",
+    "source": "2ememain",
+    "title": "VTC TREK FX 2 Disc Equipped 28\" 380€€048981/3734",
+    "description": "Merci de bien lire l&#39;annonce avant de prendre contact avec moi. *Certaines des réponses à vos questions pourraient s&#39;y trouver. * Je n&#39;ai pas le temps de répondre aux messages",
+    "price_cents": 38000,
+    "price_type": "FIXED",
+    "price_raw": "380 €",
+    "location": "Molenbeek-Saint-Jean",
+    "latitude": 50.855232011091,
+    "longitude": 4.3184195875513,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-femmes-velos-maman/m2411916011-vtc-trek-fx-2-disc-equipped-28-380-048981-3734",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/84f83d86-571a-4fdc-af01-21994c6a2ef7?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": null,
+    "seen_at": "2026-06-18T20:08:57.690262+00:00"
+  },
+  {
+    "id": "m2409465121",
+    "source": "2ememain",
+    "title": "Velo Kona Rove AL 650 (2021)",
+    "description": "Kona bikes 2021 | drop bar / gravel | rove | rove al 650 frame material: kona 6061 aluminum buttedfork: kona project two aluminum disccrankset: fsa tempo adventuredrivetrain: shimano claris 8spdbrakes",
+    "price_cents": 30000,
+    "price_type": "FIXED",
+    "price_raw": "300 €",
+    "location": "Schaerbeek",
+    "latitude": 50.861857255044,
+    "longitude": 4.3859987122908,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2409465121-velo-kona-rove-al-650-2021",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/1e067f4a-a1d9-4150-a9d1-b572cc22b4da?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "11 juin 26",
+    "_analyse": {
+      "garder": true,
+      "score": 82,
+      "raison": "Vélo gravel drop bar avec freins disc exactement dans le profil recherché : cyclocross/gravel polyvalent pour vélotaf et balades. Kona Rove AL est une excellente référence accessible, bon état apparent (2021), taille 650 compatible M.",
+      "conseil": "Le Kona Rove AL 650 neuf coûte environ 700–750 € en 2021. À 300 €, vous obtenez ~40% du prix neuf, soit une excellente affaire. Vérifiez l'état des freins disc (usure des plaquettes), testez le dérailleur Shimano Claris 8 vitesses (composant modeste mais fiable), et inspectez les pneus (largeur non spécifiée : idéal si 35mm+). Verdict : excellente affaire — excellent rapport qualité/prix pour un vélotaf bruxellois robuste."
+    },
+    "seen_at": "2026-06-18T20:08:57.690262+00:00"
+  },
+  {
+    "id": "m2408563649",
+    "source": "2ememain",
+    "title": "Vélo Gravel Triban – Taille M – Excellent état",
+    "description": "Je vends mon vélo gravel triban taille m, en excellent état, équipé de pneus schwalbe, il offre un excellent compromis entre rendement sur route et adhérence sur chemins. Idéal pour les sorties gravel",
+    "price_cents": 51000,
+    "price_type": "FIXED",
+    "price_raw": "510 €",
+    "location": "Schaerbeek",
+    "latitude": 50.861857255044,
+    "longitude": 4.3859987122908,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2408563649-velo-gravel-triban-taille-m-excellent-etat",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/cc6dd259-006d-45ed-9651-6f5104b12356?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "11 juin 26",
+    "_analyse": {
+      "garder": true,
+      "score": 75,
+      "raison": "Gravel Triban taille M en excellent état, pneus qualité Schwalbe, bon compromis polyvalent route/chemin. Vérifié compatible vélotaf bruxellois et balades gravel week-end.",
+      "conseil": "Triban (marque Decathlon) neuf ~700-800 €, prix demandé ~65% du neuf = bonne affaire. Avant achat, vérifier : type de freins (hydraulique disc idéal, sinon -10 points), largeur pneus Schwalbe (35 mm+ = bonus confort pavés), présence/compatibilité porte-bagages pour vélotaf 11 km. Négocier légèrement sur l'absence de guidon drop mentionnée (gravel plat vs cyclocross drop préféré) : bonne affaire mais pas optimale."
+    },
+    "seen_at": "2026-06-18T20:08:57.690262+00:00"
+  },
+  {
+    "id": "m2408159468",
+    "source": "2ememain",
+    "title": "Vélo Gravel Triban – Taille M – Excellent état",
+    "description": "Je vends mon vélo gravel triban taille m, en excellent état, équipé de pneus schwalbe, il offre un excellent compromis entre confort, rendement sur route et adhérence sur chemins. Idéal pour les sorti",
+    "price_cents": 51000,
+    "price_type": "FIXED",
+    "price_raw": "510 €",
+    "location": "Schaerbeek",
+    "latitude": 50.861857255044,
+    "longitude": 4.3859987122908,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2408159468-velo-gravel-triban-taille-m-excellent-etat",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/49f636e9-3cb9-4e0d-8fc5-bce081e3c1df?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "7 juin 26",
+    "_analyse": {
+      "garder": true,
+      "score": 72,
+      "raison": "Gravel Triban taille M en excellent état, profil polyvalent adapté au vélotaf et balades gravel du profil acheteur, pneus de qualité Schwalbe, prix attractif.",
+      "conseil": "Le Triban neuf (entrée gamme gravel Decathlon) se situe entre 600-750 €. À 510 €, vous obtenez ~68-85% du prix neuf : bonne affaire. Vérifiez l'état exact des pneus Schwalbe (épaisseur, craquelures) et testez les freins (type non précisé — critère important sous la pluie bruxelloise). Demander confirmation sur le type de frein (disque hydraulique = +10 points supplémentaires) et négocier légèrement si freins à patins. Verdict : bonne affaire si freins disque hydraulique, prix correct sinon."
+    },
+    "seen_at": "2026-06-18T20:08:57.690262+00:00"
+  }
+]

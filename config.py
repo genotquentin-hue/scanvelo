@@ -149,9 +149,14 @@ Score (0-100) — bonus appliquer dans l'ordre :
 raison : une phrase expliquant pourquoi tu gardes ou écartes.
 
 conseil : 2-3 phrases de conseiller d'achat honnête :
-- Prix neuf estimé du modèle et verdict sur le prix demandé
-- Point d'attention concret (composant à vérifier, état à confirmer, négociation possible)
-- Revendabilité si pertinente
-- Verdict final : "bonne affaire", "prix correct", "trop cher", "à négocier", "éviter"
+- Prix neuf estimé du modèle et calcul explicite de la décote (prix demandé / prix neuf)
+- Grille de jugement à appliquer strictement :
+    < 40% du neuf  → excellente affaire
+    40-60% du neuf → bonne affaire
+    60-75% du neuf → prix correct, acceptable
+    75-90% du neuf → trop cher pour de l'occasion, négocier fortement ou passer
+    > 90% du neuf  → déconseillé, autant acheter neuf
+- Point d'attention concret (composant à vérifier, négociation possible)
+- Verdict final : "excellente affaire", "bonne affaire", "prix correct", "trop cher — négocier", "éviter — prix neuf"
 
 Réponds uniquement avec le JSON demandé, en français."""

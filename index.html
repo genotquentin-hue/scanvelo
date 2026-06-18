@@ -104,6 +104,29 @@
 
     .empty { color: #888; font-size: 0.9rem; padding: 12px 0; }
 
+    .btn-dismiss {
+      background: none;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      color: #999;
+      cursor: pointer;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      align-self: flex-start;
+    }
+    .btn-dismiss:hover { border-color: #e55; color: #e55; }
+
+    .reset-link {
+      font-size: 0.75rem;
+      color: #aaa;
+      cursor: pointer;
+      text-decoration: underline;
+      margin-left: 8px;
+    }
+    .reset-link:hover { color: #555; }
+
     footer {
       font-size: 0.75rem;
       color: #aaa;
@@ -120,7 +143,7 @@
 </header>
 
 <section class="section" id="top5-section">
-  <h2>🏆 Top 5 meilleures annonces en ligne</h2>
+  <h2>🏆 Top 5 meilleures annonces en ligne <span class="reset-link" id="reset-dismissed" style="display:none" onclick="resetDismissed()">Réafficher tout</span></h2>
   <div id="top5-list"><p class="empty">Chargement…</p></div>
 </section>
 
@@ -132,6 +155,30 @@
 <footer>Données mises à jour automatiquement à chaque run du scraper · <a href="https://github.com/genotquentin-hue/scanvelo">GitHub</a></footer>
 
 <script>
+  const DISMISSED_KEY = 'dismissed_top5';
+
+  function getDismissed() {
+    return new Set(JSON.parse(localStorage.getItem(DISMISSED_KEY) || '[]'));
+  }
+
+  function dismiss(id) {
+    const set = getDismissed();
+    set.add(id);
+    localStorage.setItem(DISMISSED_KEY, JSON.stringify([...set]));
+    document.querySelector(`[data-id="${id}"]`).closest('.card').remove();
+    document.getElementById('reset-dismissed').style.display = '';
+    const remaining = document.querySelectorAll('#top5-list .card');
+    if (!remaining.length) {
+      document.getElementById('top5-list').innerHTML = '<p class="empty">Aucune annonce en top 5 pour l\'instant.</p>';
+    }
+  }
+
+  function resetDismissed() {
+    localStorage.removeItem(DISMISSED_KEY);
+    document.getElementById('reset-dismissed').style.display = 'none';
+    load();
+  }
+
   function scoreBadge(score) {
     const cls = score >= 75 ? '' : score >= 55 ? 'mid' : 'low';
     return `<span class="badge ${cls}">🤖 ${score}/100</span>`;
@@ -139,15 +186,21 @@
 
   function renderTop5(data) {
     const el = document.getElementById('top5-list');
-    if (!data.length) { el.innerHTML = '<p class="empty">Aucune annonce en top 5 pour l\'instant.</p>'; return; }
-    el.innerHTML = data.map((l, i) => `
+    const dismissed = getDismissed();
+    const visible = data.filter(l => !dismissed.has(l.id));
+    if (dismissed.size) document.getElementById('reset-dismissed').style.display = '';
+    if (!visible.length) { el.innerHTML = '<p class="empty">Aucune annonce en top 5 pour l\'instant.</p>'; return; }
+    el.innerHTML = visible.map((l, i) => `
       <div class="card">
         <div class="card-header">
           <div style="display:flex;gap:10px;align-items:flex-start;flex:1">
             <span class="rank">${i + 1}.</span>
             <span class="card-title"><a href="${l.url}" target="_blank" rel="noopener">${l.title}</a></span>
           </div>
-          ${l.score != null ? scoreBadge(l.score) : ''}
+          <div style="display:flex;gap:8px;align-items:flex-start">
+            ${l.score != null ? scoreBadge(l.score) : ''}
+            <button class="btn-dismiss" data-id="${l.id}" onclick="dismiss('${l.id}')">✕ Retirer</button>
+          </div>
         </div>
         <div class="card-meta">
           <span>💰 ${l.price_raw || '?'}</span>

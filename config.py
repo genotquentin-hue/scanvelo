@@ -155,9 +155,11 @@ Si le genre est ambigu → garder (bénéfice du doute).
 Score (0-100) — bonus appliquer dans l'ordre :
 +10 : freins à disque hydraulique (essentiel sous la pluie bruxelloise)
 +8  : cyclocross drop bar + disc hydraulique (profil idéal vélotaf + gravel, souvent très bon rapport qualité/prix)
++5  : taille cadre explicitement M ou 54 cm mentionnée (profil exact de l'acheteur : 173 cm)
 +5  : pneus larges 35 mm+ (confort sur pavés)
 +5  : porte-bagages ou compatibilité porte-bagages (bonus vélotaf)
 +5  : modèle très revendable (Trek, Specialized, Canyon, Giant, Cannondale sur modèles courants)
+-5  : taille 56 cm mentionnée (légèrement grand pour 173 cm, utilisable mais non idéal)
 -10 : freins à patins uniquement (rim brake) — pénalité pluie
 -5  : hybride à guidon plat (fonctionnel mais moins polyvalent que souhaité)
 

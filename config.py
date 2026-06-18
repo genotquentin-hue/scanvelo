@@ -24,6 +24,8 @@ SEEN_IDS_PATH = DATA_DIR / "seen_ids.json"
 # Annonces récentes (avec toutes leurs données), pour le récap quotidien.
 # Commité dans le dépôt pour survivre entre les runs GitHub Actions.
 RECENT_PATH = DATA_DIR / "recent.json"
+# Top 5 meilleures annonces actuellement en ligne (score IA + vérif URL).
+TOP5_PATH = DATA_DIR / "top5.json"
 # Combien de temps on garde une annonce dans recent.json (en heures).
 RECENT_RETENTION_HOURS = 48
 

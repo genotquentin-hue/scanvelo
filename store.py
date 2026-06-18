@@ -8,7 +8,9 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from config import RECENT_PATH, RECENT_RETENTION_HOURS, SEEN_IDS_PATH
+import requests
+
+from config import RECENT_PATH, RECENT_RETENTION_HOURS, SEEN_IDS_PATH, TOP5_PATH
 
 
 def load_seen_ids(path: Path = SEEN_IDS_PATH) -> set[str]:
@@ -74,3 +76,71 @@ def add_recent(new_listings: list[dict], path: Path = RECENT_PATH) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(kept, f, ensure_ascii=False, indent=2)
+
+
+# --- Top 5 ---
+
+def load_top5(path: Path = TOP5_PATH) -> list[dict]:
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_top5(top5: list[dict], path: Path = TOP5_PATH) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(top5, f, ensure_ascii=False, indent=2)
+
+
+def is_listing_online(url: str) -> bool:
+    """Retourne True si l'annonce est encore accessible. Fail-safe : True en cas d'erreur."""
+    try:
+        resp = requests.get(
+            url, timeout=10, allow_redirects=True,
+            headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"},
+        )
+        return resp.status_code == 200 and "not-found" not in resp.url
+    except Exception:
+        return True
+
+
+def update_top5(new_kept: list[dict], dry_run: bool = False) -> None:
+    """Met à jour le top 5 : retire les annonces hors ligne, ajoute les nouvelles, garde les 5 meilleurs scores."""
+    top5 = load_top5()
+
+    # Vérifier que les entrées actuelles sont encore en ligne
+    still_online = []
+    for l in top5:
+        if is_listing_online(l["url"]):
+            still_online.append(l)
+        else:
+            print(f"  [top5] retirée (hors ligne) : {l['title']}")
+
+    # Ajouter les nouvelles candidates retenues par l'IA
+    existing_ids = {l["id"] for l in still_online}
+    for l in new_kept:
+        if l["id"] not in existing_ids:
+            analyse = l.get("_analyse") or {}
+            still_online.append({
+                "id": l["id"],
+                "title": l.get("title", ""),
+                "price_raw": l.get("price_raw", ""),
+                "location": l.get("location", ""),
+                "url": l.get("url", ""),
+                "score": analyse.get("score", 0),
+                "raison": analyse.get("raison", ""),
+                "conseil": analyse.get("conseil", ""),
+            })
+
+    still_online.sort(key=lambda x: x.get("score", 0), reverse=True)
+    new_top5 = still_online[:5]
+
+    if not dry_run:
+        save_top5(new_top5)
+
+    print(f"\n{'[DRY-RUN] ' if dry_run else ''}Top 5 meilleures annonces en ligne :")
+    for i, l in enumerate(new_top5, 1):
+        print(f"  {i}. [{l.get('score', '?')}/100] {l['title']} — {l.get('price_raw', '?')}")
+        if l.get("conseil"):
+            print(f"     💡 {l['conseil']}")

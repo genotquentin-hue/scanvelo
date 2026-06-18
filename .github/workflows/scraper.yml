@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "bike-monitor[bot]"
           git config user.email "bike-monitor@users.noreply.github.com"
-          git add data/seen_ids.json data/recent.json
+          git add data/seen_ids.json data/recent.json data/top5.json
           # git commit échoue s'il n'y a rien à committer → on l'ignore proprement
           if git diff --cached --quiet; then
             echo "Rien à committer."

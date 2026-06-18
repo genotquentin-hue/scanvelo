@@ -18,7 +18,7 @@ from analyzer import analyze_listing
 from filters import passes_filters
 from notifier import send_telegram
 from scraper.deuxiememain import DeuxiememainScraper
-from store import add_recent, load_seen_ids, save_seen_ids
+from store import add_recent, load_seen_ids, save_seen_ids, update_top5
 
 # Liste des scrapers actifs. Pour ajouter marktplaats plus tard : une ligne ici.
 SCRAPERS = [DeuxiememainScraper]
@@ -43,8 +43,8 @@ def main(dry_run: bool = False) -> None:
     new_listings = [l for l in relevant if l["id"] not in seen_ids]
     print(f"{len(new_listings)} nouvelle(s) annonce(s)")
 
-    # 5. Analyse IA + notifications
-    to_notify: list[dict] = []
+    # 5. Analyse IA
+    kept_listings: list[dict] = []
 
     for l in new_listings:
         verdict = analyze_listing(l)
@@ -52,6 +52,9 @@ def main(dry_run: bool = False) -> None:
         l["_analyse"] = verdict
         # L'ID est marqué "vu" même si écarté : évite de re-payer l'analyse au run suivant.
         seen_ids.add(l["id"])
+
+        if garder:
+            kept_listings.append(l)
 
         if dry_run:
             tag = "✓ GARDER" if garder else "✗ écarté"
@@ -61,19 +64,21 @@ def main(dry_run: bool = False) -> None:
             print(f"  [{tag}{score}]{raison}")
             print(f"  • {l['title']} — {l.get('price_raw')} — {l.get('location')}")
             print(f"    {l['url']}{conseil}")
-        elif garder:
-            to_notify.append(l)
+
+    # 6. Mise à jour du top 5 (vérifie les URL encore en ligne + ajoute les nouvelles)
+    update_top5(kept_listings, dry_run=dry_run)
 
     if dry_run:
         return
 
-    for l in to_notify:
+    # 7. Notifications Telegram
+    for l in kept_listings:
         if send_telegram(l):
             print(f"  ✓ notifié : {l['title']}")
 
-    # 6. Persistance
-    if to_notify:
-        add_recent(to_notify)
+    # 8. Persistance
+    if kept_listings:
+        add_recent(kept_listings)
     save_seen_ids(seen_ids)
     print("\nTerminé.")
 

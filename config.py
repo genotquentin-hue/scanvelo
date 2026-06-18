@@ -116,28 +116,35 @@ ANALYSE_MODEL = "claude-haiku-4-5"
 
 ANALYSE_CRITERES = """Tu analyses des annonces de vélos d'occasion pour un acheteur bruxellois.
 
-Son besoin : un vélo polyvalent pour le vélotaf quotidien en ville et des balades
-le week-end (gravel, commute, hybride). Budget max 1000 €. État correct exigé.
-Taille du cycliste : 173 cm → taille cadre M (ou équivalent : 54cm, 56cm selon le type).
-Si l'annonce mentionne explicitement une autre taille (S, L, XL, 50cm, 58cm+),
-baisser le score. Si la taille n'est pas mentionnée, ne pas pénaliser.
+Profil de l'acheteur :
+- Homme, 173 cm → taille cadre M (54-56 cm selon le type de vélo)
+- Usage : vélotaf quotidien ~11 km/jour en ville + balades gravel occasionnelles le week-end
+- Budget max : 1000 €
+- Critère bonus : vélo facilement revendable (marque connue, modèle populaire)
 
-Critères pour GARDER une annonce (garder=true) :
-- Vélo entier en état roulant (pas de pièces détachées, pas de cadre nu)
-- Pas de signaux rédhibitoires : rouille importante, accident mentionné, fourche
-  tordue, cadre fissuré, pièces manquantes essentielles (roues, freins, guidon)
-- Adapté à un usage mixte ville/chemin (gravel, hybride, trekking, cyclocross,
-  commute) — exclure vélos de route pure, VTT descente, vélos enfants
-- Prix cohérent avec l'état décrit (méfiance si prix très bas + état douteux)
+Critères pour ÉCARTER une annonce (garder=false) :
+- Vélo explicitement pour femme (géométrie step-through, cadre "mixte dame", coloris
+  typiquement féminins mentionnés comme tels, taille XS ou S féminin)
+- Pièces détachées ou cadre nu (pas un vélo complet)
+- Signaux rédhibitoires : rouille importante, accident mentionné, fourche tordue,
+  cadre fissuré, pièces manquantes essentielles
+- Taille incompatible explicitement mentionnée (S, XS, L, XL, 58cm+, 50cm-)
+- VTT descente, vélo de route de compétition pure, vélo enfant
+- État clairement mauvais ("à réparer", "pour pièces", "ne fonctionne pas")
 
-Score (0-100) : adéquation globale au besoin. 80+ = excellent match.
+Si la taille n'est pas mentionnée : ne pas pénaliser.
+Si l'annonce est ambiguë sur le genre : garder (bénéfice du doute).
+
+Score (0-100) : adéquation globale. 80+ = excellent match.
+Bonus score (+5 à +10) si le modèle est reconnu comme facilement revendable
+(ex : Trek, Specialized, Canyon, Giant sur des modèles populaires).
 
 raison : une phrase expliquant pourquoi tu gardes ou écartes l'annonce.
 
 conseil : 1-2 phrases de conseiller d'achat honnête. Inclus :
-- estimation du prix neuf de ce modèle et si le prix demandé est une bonne affaire
-- un point d'attention concret s'il y en a (composants à vérifier, négociation possible…)
-- ton verdict final en une expression courte (ex : "bonne affaire", "prix correct",
-  "trop cher pour l'état", "à négocier")
+- estimation du prix neuf et si le prix demandé est une bonne affaire
+- un point d'attention concret si pertinent (composants à vérifier, négociation…)
+- mention de la revendabilité si le modèle est un bon investissement
+- ton verdict final : "bonne affaire", "prix correct", "trop cher", "à négocier"
 
 Réponds uniquement avec le JSON demandé, en français."""

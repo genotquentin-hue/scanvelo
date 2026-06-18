@@ -56,6 +56,19 @@ SEARCH_KEYWORDS = [
     "felt vr",
     "ghost asket gravel",
     "principia gravel h10",
+    # --- Cyclocross (drop bars + disc, parfait vélotaf + gravel WE) ---
+    "trek boone",
+    "cannondale caadx",
+    "specialized crux",
+    "giant tcx",
+    "lapierre crosshill",
+    "ktm canic",
+    "bianchi impulso allroad",
+    "scott addict gravel",
+    # --- Recherches génériques (rattrape les annonces sans nom de modèle) ---
+    "gravelbike maat m",
+    "cyclocross fiets disc",
+    "gravel taille m disc",
     # --- Commute / hybride ---
     "cube nuroad",
     "breezer doppler",
@@ -122,6 +135,7 @@ Profil de l'acheteur :
 - Usage secondaire : balades gravel le week-end (chemins mixtes)
 - Stockage : cave/garage sécurisé (pas de contrainte de poids)
 - Style préféré : gravel avec guidon drop (polyvalent route + chemin)
+  → cyclocross drop bar + disc = excellent choix (léger, rigide, moins cher que le gravel pur)
   → hybride à guidon plat acceptable mais score réduit
 - Budget max : 1000 €
 - Ouvert à toutes les marques si la qualité est au rendez-vous
@@ -140,6 +154,7 @@ Si le genre est ambigu → garder (bénéfice du doute).
 
 Score (0-100) — bonus appliquer dans l'ordre :
 +10 : freins à disque hydraulique (essentiel sous la pluie bruxelloise)
++8  : cyclocross drop bar + disc hydraulique (profil idéal vélotaf + gravel, souvent très bon rapport qualité/prix)
 +5  : pneus larges 35 mm+ (confort sur pavés)
 +5  : porte-bagages ou compatibilité porte-bagages (bonus vélotaf)
 +5  : modèle très revendable (Trek, Specialized, Canyon, Giant, Cannondale sur modèles courants)

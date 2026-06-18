@@ -73,7 +73,7 @@ SEARCH_KEYWORDS = [
 
 # --- Fourchette de prix (en centimes d'euro) ---
 # On stocke en centimes pour éviter les erreurs d'arrondi des floats.
-MIN_PRICE_CENTS = 50_000   # 500 €
+MIN_PRICE_CENTS = 25_000   # 250 €
 MAX_PRICE_CENTS = 100_000  # 1000 €
 
 # --- Villes dans ~20km de Bruxelles ---

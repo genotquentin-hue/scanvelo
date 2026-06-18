@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🚲 Scrap Vélo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f4f6f4;
+      color: #1a1a1a;
+      padding: 16px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0 12px;
+      border-bottom: 2px solid #2d6a2d;
+      margin-bottom: 24px;
+    }
+    header h1 { font-size: 1.5rem; color: #2d6a2d; }
+    #last-updated { font-size: 0.78rem; color: #777; }
+
+    h2 {
+      font-size: 1.1rem;
+      color: #2d6a2d;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section { margin-bottom: 36px; }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      border-left: 4px solid #2d6a2d;
+    }
+    .card.recent { border-left-color: #5a9a5a; }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 1rem;
+      flex: 1;
+    }
+    .card-title a { color: #1a4d1a; text-decoration: none; }
+    .card-title a:hover { text-decoration: underline; }
+
+    .badge {
+      background: #2d6a2d;
+      color: #fff;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .badge.mid { background: #7a9a2d; }
+    .badge.low { background: #aaa; }
+
+    .card-meta {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 6px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .conseil {
+      font-size: 0.85rem;
+      color: #3a5a3a;
+      background: #f0f7f0;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    .rank {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #2d6a2d;
+      min-width: 28px;
+    }
+
+    .empty { color: #888; font-size: 0.9rem; padding: 12px 0; }
+
+    footer {
+      font-size: 0.75rem;
+      color: #aaa;
+      text-align: center;
+      padding: 24px 0 8px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚲 Scrap Vélo — Bruxelles</h1>
+  <span id="last-updated">Chargement…</span>
+</header>
+
+<section class="section" id="top5-section">
+  <h2>🏆 Top 5 meilleures annonces en ligne</h2>
+  <div id="top5-list"><p class="empty">Chargement…</p></div>
+</section>
+
+<section class="section" id="recent-section">
+  <h2>🆕 Nouvelles annonces (24h)</h2>
+  <div id="recent-list"><p class="empty">Chargement…</p></div>
+</section>
+
+<footer>Données mises à jour automatiquement à chaque run du scraper · <a href="https://github.com/genotquentin-hue/scanvelo">GitHub</a></footer>
+
+<script>
+  function scoreBadge(score) {
+    const cls = score >= 75 ? '' : score >= 55 ? 'mid' : 'low';
+    return `<span class="badge ${cls}">🤖 ${score}/100</span>`;
+  }
+
+  function renderTop5(data) {
+    const el = document.getElementById('top5-list');
+    if (!data.length) { el.innerHTML = '<p class="empty">Aucune annonce en top 5 pour l\'instant.</p>'; return; }
+    el.innerHTML = data.map((l, i) => `
+      <div class="card">
+        <div class="card-header">
+          <div style="display:flex;gap:10px;align-items:flex-start;flex:1">
+            <span class="rank">${i + 1}.</span>
+            <span class="card-title"><a href="${l.url}" target="_blank" rel="noopener">${l.title}</a></span>
+          </div>
+          ${l.score != null ? scoreBadge(l.score) : ''}
+        </div>
+        <div class="card-meta">
+          <span>💰 ${l.price_raw || '?'}</span>
+          ${l.location ? `<span>📍 ${l.location}</span>` : ''}
+        </div>
+        ${l.conseil ? `<div class="conseil">💡 ${l.conseil}</div>` : ''}
+      </div>
+    `).join('');
+  }
+
+  function renderRecent(data) {
+    const el = document.getElementById('recent-list');
+    const cutoff = Date.now() - 24 * 3600 * 1000;
+    const last24 = data.filter(l => l.seen_at && new Date(l.seen_at).getTime() >= cutoff);
+    last24.sort((a, b) => new Date(b.seen_at) - new Date(a.seen_at));
+
+    if (!last24.length) { el.innerHTML = '<p class="empty">Aucune nouvelle annonce dans les dernières 24h.</p>'; return; }
+    el.innerHTML = last24.map(l => {
+      const analyse = l._analyse;
+      const score = analyse ? scoreBadge(analyse.score) : '';
+      const conseil = analyse && analyse.conseil ? `<div class="conseil">💡 ${analyse.conseil}</div>` : '';
+      const seenAt = l.seen_at ? new Date(l.seen_at).toLocaleString('fr-BE', { hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit' }) : '';
+      return `
+        <div class="card recent">
+          <div class="card-header">
+            <span class="card-title"><a href="${l.url}" target="_blank" rel="noopener">${l.title}</a></span>
+            ${score}
+          </div>
+          <div class="card-meta">
+            <span>💰 ${l.price_raw || '?'}</span>
+            ${l.location ? `<span>📍 ${l.location}</span>` : ''}
+            ${seenAt ? `<span>🕐 ${seenAt}</span>` : ''}
+          </div>
+          ${conseil}
+        </div>`;
+    }).join('');
+  }
+
+  async function load() {
+    try {
+      const [top5Res, recentRes] = await Promise.all([
+        fetch('./data/top5.json'),
+        fetch('./data/recent.json'),
+      ]);
+      const [top5, recent] = await Promise.all([top5Res.json(), recentRes.json()]);
+      renderTop5(top5);
+      renderRecent(recent);
+      document.getElementById('last-updated').textContent =
+        'Mis à jour : ' + new Date().toLocaleString('fr-BE', { hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit' });
+    } catch (e) {
+      document.getElementById('top5-list').innerHTML = '<p class="empty">Erreur de chargement.</p>';
+      document.getElementById('recent-list').innerHTML = '<p class="empty">Erreur de chargement.</p>';
+    }
+  }
+
+  load();
+</script>
+</body>
+</html>

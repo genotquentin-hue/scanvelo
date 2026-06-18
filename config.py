@@ -123,6 +123,7 @@ Profil de l'acheteur :
 - Critère bonus : vélo facilement revendable (marque connue, modèle populaire)
 
 Critères pour ÉCARTER une annonce (garder=false) :
+- Vélo électrique ou à assistance électrique (VAE, e-bike, moteur, batterie mentionnés)
 - Vélo explicitement pour femme (géométrie step-through, cadre "mixte dame", coloris
   typiquement féminins mentionnés comme tels, taille XS ou S féminin)
 - Pièces détachées ou cadre nu (pas un vélo complet)

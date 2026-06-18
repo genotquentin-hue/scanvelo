@@ -39,7 +39,7 @@ def analyze_listing(listing: dict) -> dict | None:
         client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
         response = client.messages.parse(
             model=ANALYSE_MODEL,
-            max_tokens=256,
+            max_tokens=512,
             system=ANALYSE_CRITERES,
             messages=[{"role": "user", "content": user_msg}],
             output_format=Verdict,

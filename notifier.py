@@ -111,12 +111,17 @@ def send_email_recap(listings: list[dict], subject: str | None = None, top5: lis
         return False
 
 
+WEB_URL = "https://genotquentin-hue.github.io/scanvelo/"
+
+
 def _format_email_text(listings: list[dict], top5: list[dict]) -> str:
-    lines = []
+    lines = [f"Voir la page web : {WEB_URL}\n"]
     if top5:
         lines.append(f"=== TOP 5 MEILLEURES ANNONCES EN LIGNE ===\n")
         for i, l in enumerate(top5, 1):
             lines.append(f"{i}. [{l.get('score', '?')}/100] {l.get('title', '?')} — {l.get('price_raw', '?')}")
+            if l.get("location"):
+                lines[-1] += f" — {l['location']}"
             if l.get("conseil"):
                 lines.append(f"   💡 {l['conseil']}")
             lines.append(f"   {l.get('url', '')}\n")
@@ -127,12 +132,23 @@ def _format_email_text(listings: list[dict], top5: list[dict]) -> str:
         for i, l in enumerate(listings, 1):
             city = l.get("location") or "?"
             lines.append(f"{i}. {l.get('title', '?')} — {l.get('price_raw', '?')} — {city}")
+            analyse = l.get("_analyse")
+            if analyse:
+                lines.append(f"   🤖 {analyse['score']}/100 — {analyse['raison']}")
+                if analyse.get("conseil"):
+                    lines.append(f"   💡 {analyse['conseil']}")
             lines.append(f"   {l.get('url', '')}\n")
     return "\n".join(lines)
 
 
 def _format_email_html(listings: list[dict], top5: list[dict]) -> str:
     parts = []
+
+    parts.append(
+        f'<p style="margin-bottom:20px">'
+        f'<a href="{WEB_URL}" style="color:#1a6b2e;font-weight:600">📊 Voir la page web complète</a>'
+        f'</p>'
+    )
 
     if top5:
         top5_rows = []
@@ -142,11 +158,13 @@ def _format_email_html(listings: list[dict], top5: list[dict]) -> str:
             url = escape(l.get("url", ""))
             score = l.get("score", "?")
             conseil = escape(l.get("conseil", ""))
+            location = escape(l.get("location") or "")
+            loc_str = f" · 📍 {location}" if location else ""
             top5_rows.append(
                 f'<li style="margin-bottom:16px">'
                 f'<span style="font-size:1.1em"><b>{i}.</b> '
                 f'<a href="{url}">{title}</a></span><br>'
-                f'<span style="color:#555">💰 {price} · 🤖 {score}/100</span><br>'
+                f'<span style="color:#555">💰 {price}{loc_str} · 🤖 {score}/100</span><br>'
                 f'<span style="color:#333;font-style:italic">💡 {conseil}</span>'
                 f"</li>"
             )
@@ -166,10 +184,21 @@ def _format_email_html(listings: list[dict], top5: list[dict]) -> str:
             city = escape(l.get("location") or "?")
             url = escape(l.get("url", ""))
             size = " · 📏 taille M" if has_size_m(l) else ""
+            analyse = l.get("_analyse")
+            analyse_str = ""
+            if analyse:
+                raison = escape(analyse.get("raison", ""))
+                conseil = escape(analyse.get("conseil", ""))
+                score = analyse.get("score", "?")
+                analyse_str = (
+                    f'<br><span style="color:#555">🤖 {score}/100 — {raison}</span>'
+                    + (f'<br><span style="color:#333;font-style:italic">💡 {conseil}</span>' if conseil else "")
+                )
             rows.append(
-                f'<li style="margin-bottom:12px">'
+                f'<li style="margin-bottom:14px">'
                 f'<a href="{url}"><b>{title}</b></a><br>'
                 f"💰 {price} · 📍 {city}{size}"
+                f"{analyse_str}"
                 f"</li>"
             )
         parts.append(

@@ -103,5 +103,28 @@
     "posted_at": "23 mai 26",
     "_analyse": null,
     "seen_at": "2026-06-18T19:56:43.477784+00:00"
+  },
+  {
+    "id": "m2412020455",
+    "source": "2ememain",
+    "title": "Gravel Cyclo-cross Ridley X-Ride (Ultegra)",
+    "description": "Ridley x-ride shimano ultegra 2x11 freins mécaniques fourche carbone actuellement monté en 28mm possibilité de vous remettre les pneus 35mm pour plus de polyvalence (cf photos) taille 54 terrible vélo",
+    "price_cents": 65000,
+    "price_type": "MIN_BID",
+    "price_raw": "À partir de 650 €",
+    "location": "Evere",
+    "latitude": 50.87001818378,
+    "longitude": 4.4082404030359,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2412020455-gravel-cyclo-cross-ridley-x-ride-ultegra",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/43cce802-a817-4727-a2f5-a5fd26f77466?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 82,
+      "raison": "Cyclocross Ridley X-Ride taille 54 cm parfait pour 173 cm, freins à disque mécanique (acceptable mais non hydraulique), groupe Ultegra excellent, pneus 35 mm disponibles = excellent choix pour vélotaf + gravel du profil.",
+      "conseil": "Le Ridley X-Ride neuf se négocie entre 1200-1400 € en équivalent Ultegra. À 650 €, vous êtes à ~47-54 % du neuf : très bonne affaire. La taille 54 cm est exactement votre profil. Vérifiez l'état des plaquettes de freins mécaniques (moins puissants en pluie que l'hydraulique, mais fonctionnels), et validez que les pneus 35 mm promis en photos sont bien présents ou fournis. Négociez légèrement sur le prix si seuls les 28 mm sont montés actuellement."
+    },
+    "seen_at": "2026-06-18T20:29:31.008871+00:00"
   }
 ]

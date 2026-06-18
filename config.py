@@ -65,6 +65,8 @@ SEARCH_KEYWORDS = [
     "ktm canic",
     "bianchi impulso allroad",
     "scott addict gravel",
+    "ridley x-ride",
+    "ridley x-night",
     # --- Recherches génériques (rattrape les annonces sans nom de modèle) ---
     "gravelbike maat m",
     "cyclocross fiets disc",

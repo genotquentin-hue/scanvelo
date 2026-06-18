@@ -66,7 +66,7 @@ SEARCH_KEYWORDS = [
     "giant toughroad",
     "giant escape",
     "specialized crosstrail",
-    "decathlon triban",
+    "triban gravel",
     "koga roadster",
     "tout terrain silkroad",
 ]

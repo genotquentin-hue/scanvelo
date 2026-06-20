@@ -48,8 +48,15 @@ jobs:
           git commit -m "chore: mise à jour des annonces vues"
           # Le distant peut avoir avancé depuis le checkout : on rebase puis on pousse,
           # avec quelques tentatives en cas de course (push non-fast-forward).
+          # -X theirs : les data/*.json sont de l'état régénéré à chaque run dont le
+          # runner est propriétaire ; en cas de conflit on garde la version du runner.
+          # git rebase --abort : si le rebase s'interrompt malgré tout, on nettoie
+          # l'arbre avant de retenter, sinon le pull suivant boucle sur "unmerged files".
           for i in 1 2 3 4 5; do
-            git pull --rebase --autostash origin main && git push && exit 0
+            if git pull --rebase -X theirs --autostash origin main && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
             echo "Push refusé (tentative $i), nouvelle tentative…"
             sleep 5
           done

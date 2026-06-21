@@ -205,5 +205,28 @@
       "conseil": "Le Bergamont Grandurance 6 (gravel) neuf affiché à 1500 € est surévalué : ce modèle se vend ~1200-1300 € neuf selon les sources (décote négative = prix neuf ou quasi-neuf). Le Sirocco Avenue V-brake 8V (VTC ancien, freins patins) à 300 € avec accessoires est un pis-aller datant d'une époque (V-brake/rim brake inadapté à la pluie bruxelloise). **Points critiques** : demander la taille cadre du Bergamont (M/54-56 cm), confirmer les freins (disque hydraulique ou patins ?), l'état réel malgré « jamais utilisé » (vérifier pneus, groupset, rouille), et négocier fortement sous 1000 € si vous envisagez le Grandurance seul. **Verdict** : intéressant si le Bergamont est en M, freins disque et à ≤900 €, sinon laisser passer."
     },
     "seen_at": "2026-06-21T15:07:38.959410+00:00"
+  },
+  {
+    "id": "m2412803515",
+    "source": "2ememain",
+    "title": "Kona Rove",
+    "description": "Kona rove in excellent conditions.",
+    "price_cents": 60000,
+    "price_type": "MIN_BID",
+    "price_raw": "À partir de 600 €",
+    "location": "Auderghem",
+    "latitude": 50.810190088198,
+    "longitude": 4.4379995443319,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-cruisers-lowriders/m2412803515-kona-rove",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/e11eabbe-6cc9-4685-8d8d-bc6dadaac3c8?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 78,
+      "raison": "Kona Rove est un gravel de référence avec freins à disque, bien adapté au profil vélotaf + balades gravel de l'acheteur. Excellent rapport qualité/prix et marque réputée.",
+      "conseil": "Le Kona Rove neuf se situe entre 900 et 1200 € selon l'année et la transmission. À 600 €, vous êtes entre 50-67% du prix neuf — très bonne affaire. Vérifiez la taille du cadre (le Rove en M fait ~54 cm, idéal pour 173 cm) et l'état des freins à disque hydraulique. Attention à la spécification exacte (Rove DL, AL, ST ?) car certaines versions anciennes ont des freins mécaniques. Verdict : excellente affaire si M, bonne affaire sinon."
+    },
+    "seen_at": "2026-06-21T15:53:42.850499+00:00"
   }
 ]

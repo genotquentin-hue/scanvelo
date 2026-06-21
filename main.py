@@ -35,6 +35,13 @@ def main(dry_run: bool = False) -> None:
         print(f"\n=== {scraper.source} ===")
         all_listings.extend(scraper.run())
 
+    # Dédoublonnage : un même vélo peut apparaître dans plusieurs recherches keyword
+    unique: dict = {}
+    for l in all_listings:
+        if l["id"] not in unique:
+            unique[l["id"]] = l
+    all_listings = list(unique.values())
+
     # 3. Filtres (lieu + prix)
     relevant = [l for l in all_listings if passes_filters(l)]
     print(f"\n{len(all_listings)} annonces récupérées, {len(relevant)} pertinentes")
@@ -70,6 +77,7 @@ def main(dry_run: bool = False) -> None:
     current_top5_ids = {l["id"] for l in load_top5()}
     kept_ids = {l["id"] for l in kept_listings}
     needed = 5 - len(current_top5_ids) - len(kept_ids)
+    bootstrap_listings: list[dict] = []
     if needed > 0:
         already_seen = [l for l in relevant if l["id"] not in kept_ids and l["id"] not in current_top5_ids]
         if already_seen:
@@ -79,7 +87,7 @@ def main(dry_run: bool = False) -> None:
             garder = True if verdict is None else verdict["garder"]
             l["_analyse"] = verdict
             if garder:
-                kept_listings.append(l)
+                bootstrap_listings.append(l)  # top5 uniquement, pas de notif Telegram
                 kept_ids.add(l["id"])
                 needed -= 1
             if dry_run:
@@ -90,7 +98,7 @@ def main(dry_run: bool = False) -> None:
                 break
 
     # 7. Mise à jour du top5 (vérifie les URL encore en ligne + ajoute les nouvelles)
-    update_top5(kept_listings, dry_run=dry_run)
+    update_top5(kept_listings + bootstrap_listings, dry_run=dry_run)
 
     if dry_run:
         return

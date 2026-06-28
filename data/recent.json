@@ -1,25 +1,25 @@
 [
   {
-    "id": "m2414091214",
+    "id": "m2415108730",
     "source": "2ememain",
-    "title": "Vélo cannondale topstone +garde boue",
-    "description": "Vélo de bonne qualité gravel résistant frein à disque transmission microshift 10vitesse",
-    "price_cents": 0,
-    "price_type": "FAST_BID",
-    "price_raw": "Prix à débattre",
-    "location": "Braine-L'Alleud",
-    "latitude": 50.692073235653,
-    "longitude": 4.358708997718,
+    "title": "Triban Gravel",
+    "description": "à vendre : triban gravel taille m, en très bon état général. Vélo entretenu avec soin, toujours utilisé avec attention. Il est en parfait état de fonctionnement : aucun jeu, aucun bruit parasite, tout",
+    "price_cents": 48000,
+    "price_type": "FIXED",
+    "price_raw": "480 €",
+    "location": "Schaerbeek",
+    "latitude": 50.861857255044,
+    "longitude": 4.3859987122908,
     "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2414091214-velo-cannondale-topstone-garde-boue",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/71197b67-c0a7-4e12-9ca7-8dc71e641c3b?rule=ecg_mp_eps$_82.jpg",
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2415108730-triban-gravel",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/3174f9f4-4241-420e-98f2-0d4983f60ea7?rule=ecg_mp_eps$_82.jpg",
     "posted_at": "Aujourd'hui",
     "_analyse": {
       "garder": true,
-      "score": 78,
-      "raison": "Gravel de marque réputée Cannondale avec freins à disque, excellent pour le vélotaf bruxellois et les balades weekend. Profil très proche du vélo idéal recherché, guard-boues inclus.",
-      "conseil": "Le Cannondale Topstone est un excellent gravel urbain (neuf ~900-1100 € selon version). Sans prix affiché, demandez entre 500-700 € (45-65% du neuf) selon l'année et l'état des composants. Vérifiez l'année exacte, l'usure des patins de freins à disque et demandez si la taille est bien M (54 cm). Excellent compromis qualité/prix si le prix reste raisonnable — ne pas dépasser 750 €."
+      "score": 73,
+      "raison": "Triban gravel taille M en excellent état : correspond exactement aux critères (gravel, taille M pour 173 cm, marque fiable Decathlon), prix attractif. Seul bémol : absence de mention de freins à disque hydraulique et de pneus larges dans la description incomplète.",
+      "conseil": "Le Triban Gravel neuf coûte environ 700-800 €. À 480 €, vous payez 60-68% du prix neuf : bonne affaire. Avant achat, vérifiez impérativement le type de freins (disque hydraulique idéal) et la largeur des pneus (35+ mm recommandé sur pavés bruxellois). Contactez le vendeur pour compléter la description technique et négocier si les freins sont à patins ou les pneus étroits (< 35 mm)."
     },
-    "seen_at": "2026-06-25T14:08:35.478811+00:00"
+    "seen_at": "2026-06-28T21:00:58.568454+00:00"
   }
 ]

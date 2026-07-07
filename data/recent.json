@@ -1,25 +1,20 @@
 [
   {
-    "id": "m2416941384",
+    "id": "m2418053353",
     "source": "2ememain",
-    "title": "Kona Rove 2022 Gravel",
-    "description": "Kona rove 2022 gravel équipé de garde-boues, porte-bagage, porte-gourde, sonnette, cadenas... En bon état général, mais nécessite quelques interventions (environ 200-300€ dépendant des exigences",
-    "price_cents": 75000,
-    "price_type": "FIXED",
-    "price_raw": "750 €",
-    "location": "Schaerbeek",
-    "latitude": 50.861857255044,
-    "longitude": 4.3859987122908,
+    "title": "TREK FX3 fiets mat zwart",
+    "description": "De fx 3 disc equipped is een stijlvolle hybride fiets die geleverd wordt met alle accessoires die je nodig hebt om vaker op pad te gaan. De meegeleverde verlichting, spatborden en bagagedrager maken h",
+    "price_cents": 0,
+    "price_type": "SEE_DESCRIPTION",
+    "price_raw": "Prix à débattre",
+    "location": "Meerbeek",
+    "latitude": 50.874902140326,
+    "longitude": 4.5731484869559,
     "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-vtt-mountainbikes/m2416941384-kona-rove-2022-gravel",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/3bd476bd-be27-435c-852e-c3a0e07ef4a6?rule=ecg_mp_eps$_82.jpg",
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2418053353-trek-fx3-fiets-mat-zwart",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/80e74ae3-3c32-4000-8b1d-2bf8eea1a68e?rule=ecg_mp_eps$_82.jpg",
     "posted_at": "Aujourd'hui",
-    "_analyse": {
-      "garder": true,
-      "score": 68,
-      "raison": "Gravel Kona polyvalent avec accessoires vélotaf complets (porte-bagages, garde-boues), mais freins à patins et état nécessitant 200-300€ d'interventions réduisent l'intérêt.",
-      "conseil": "Le Kona Rove neuf coûte environ 1200-1400€ : à 750€ + 250€ d'interventions = 1000€ total, soit 70-80% du neuf, prix acceptable mais limite. Vérifier précisément les interventions nécessaires (freins, chaîne, pneus ?) avant d'engager les réparations. Gravel fiable et reconvenable, mais le coût réel risque de dépasser le budget optimal — négocier à 650€ ou passer si les freins nécessitent une refonte complète."
-    },
-    "seen_at": "2026-07-04T13:15:10.530992+00:00"
+    "_analyse": null,
+    "seen_at": "2026-07-07T15:07:52.741458+00:00"
   }
 ]

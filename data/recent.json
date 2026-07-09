@@ -34,5 +34,23 @@
     "posted_at": "Aujourd'hui",
     "_analyse": null,
     "seen_at": "2026-07-08T13:08:01.182291+00:00"
+  },
+  {
+    "id": "m2418694655",
+    "source": "2ememain",
+    "title": "Cube Cross Race 2015",
+    "description": "Vélo de cyclocross / gravel monté en pneus routes. Il s&#39;agit d&#39;un cube cross race de 2015 monté en shimano 105 10 vitesses. Plateau 46x36 selle s-works pédales vtt shimano xt taille 59",
+    "price_cents": 25000,
+    "price_type": "MIN_BID",
+    "price_raw": "À partir de 250 €",
+    "location": "Bruxelles",
+    "latitude": 50.85524004255,
+    "longitude": 4.3631410143508,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2418694655-cube-cross-race-2015",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/ff5a3123-2f67-4c94-9a37-42cd35d8208a?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": null,
+    "seen_at": "2026-07-09T14:08:11.567898+00:00"
   }
 ]

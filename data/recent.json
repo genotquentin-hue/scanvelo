@@ -1,23 +1,5 @@
 [
   {
-    "id": "m2418053353",
-    "source": "2ememain",
-    "title": "TREK FX3 fiets mat zwart",
-    "description": "De fx 3 disc equipped is een stijlvolle hybride fiets die geleverd wordt met alle accessoires die je nodig hebt om vaker op pad te gaan. De meegeleverde verlichting, spatborden en bagagedrager maken h",
-    "price_cents": 0,
-    "price_type": "SEE_DESCRIPTION",
-    "price_raw": "Prix à débattre",
-    "location": "Meerbeek",
-    "latitude": 50.874902140326,
-    "longitude": 4.5731484869559,
-    "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2418053353-trek-fx3-fiets-mat-zwart",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/80e74ae3-3c32-4000-8b1d-2bf8eea1a68e?rule=ecg_mp_eps$_82.jpg",
-    "posted_at": "Aujourd'hui",
-    "_analyse": null,
-    "seen_at": "2026-07-07T15:07:52.741458+00:00"
-  },
-  {
     "id": "m2418341702",
     "source": "2ememain",
     "title": "VTC TREK7.5 FX 28\" DEORE LX état nickel 340€048981/3734",
@@ -52,5 +34,23 @@
     "posted_at": "Aujourd'hui",
     "_analyse": null,
     "seen_at": "2026-07-09T14:08:11.567898+00:00"
+  },
+  {
+    "id": "m2418880495",
+    "source": "2ememain",
+    "title": "VTC TREK7.5 FX 28\" DEORE LX état nickel 340€048981/3734",
+    "description": "Merci de bien lire l&#39;annonce avant de prendre contact avec moi. *Certaines des réponses à vos questions pourraient s&#39;y trouver. * Je n&#39;ai pas le temps de répondre aux messages",
+    "price_cents": 34000,
+    "price_type": "FIXED",
+    "price_raw": "340 €",
+    "location": "Bruxelles",
+    "latitude": 50.85524004255,
+    "longitude": 4.3631410143508,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2418880495-vtc-trek7-5-fx-28-deore-lx-etat-nickel-340-048981-3734",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/78b693af-ad15-4969-80b7-4c4f366dadf5?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": null,
+    "seen_at": "2026-07-10T08:07:37.577900+00:00"
   }
 ]

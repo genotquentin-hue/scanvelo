@@ -34,5 +34,23 @@
     "posted_at": "Aujourd'hui",
     "_analyse": null,
     "seen_at": "2026-07-11T14:08:12.682831+00:00"
+  },
+  {
+    "id": "m2419342157",
+    "source": "2ememain",
+    "title": "Canyon Grizl 7",
+    "description": "Canyon grizl 7 gravelbike, maat m, gekocht in januari 2022. Fiets is uitstekend onderhouden: na elke rit gewassen en de ketting gesmeerd, altijd binnen gestald. Geen valpartijen. Enkel lichte lakschad",
+    "price_cents": 100000,
+    "price_type": "FIXED",
+    "price_raw": "1000 €",
+    "location": "Huldenberg",
+    "latitude": 50.789779583123,
+    "longitude": 4.6119032527241,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2419342157-canyon-grizl-7",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/e58c77e4-cb94-4fd7-8abb-10190f1573a8?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": null,
+    "seen_at": "2026-07-11T15:08:05.774985+00:00"
   }
 ]

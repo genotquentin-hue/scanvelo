@@ -148,7 +148,11 @@ Profil de l'acheteur :
 - Ouvert à toutes les marques si la qualité est au rendez-vous
 
 Critères pour ÉCARTER (garder=false) :
-- Vélo électrique / VAE / e-bike (moteur, batterie mentionnés)
+- Vélo électrique / VAE / e-bike : moteur, batterie, "motor", "accu", "Bosch", "Shimano Steps",
+  "Yamaha PW", "Wh" (wattheure) mentionnés — mais aussi les indices dans le NOM DU MODÈLE lui-même,
+  même sans autre précision : préfixe "E" ou "e-" collé au nom (ex. "EGravelbike", "eSilex", "e-Grail",
+  "ECaadX"), ou suffixe/mention "electric"/"elektrisch"/"elektrische fiets". Un modèle normalement
+  musculaire (Silex, Grail, CAADX...) précédé d'un "E" est presque toujours sa version électrique.
 - Vélo explicitement pour femme (WSD, step-through, "dame", coloris féminins assumés, taille XS/S féminin)
 - Pièces détachées ou cadre nu
 - Signaux rédhibitoires : rouille importante, accident, fourche tordue, cadre fissuré, pièces manquantes essentielles

@@ -44,4 +44,8 @@ Le workflow committe ces deux fichiers après chaque run ; c'est ce qui fait per
 
 ## Configuration
 
-Tout ce qui se règle est dans `config.py` : `SEARCH_KEYWORDS` (un mot-clé = une recherche), `BRUSSELS_CITIES`, `MIN/MAX_PRICE_CENTS` (prix stockés en **centimes** partout pour éviter les floats), secrets via variables d'environnement. Les secrets se mettent dans `.env` en local (voir `.env.example`) et dans les *GitHub Actions secrets* en prod : `TELEGRAM_TOKEN`, `TELEGRAM_CHAT_ID`, `GMAIL_USER`, `GMAIL_APP_PASSWORD`, `GMAIL_TO`.
+Tout ce qui se règle est dans `config.py` : `SEARCH_KEYWORDS` (un mot-clé = une recherche), `BRUSSELS_CITIES`, `MIN/MAX_PRICE_CENTS` (prix stockés en **centimes** partout pour éviter les floats), secrets via variables d'environnement. Les secrets se mettent dans `.env` en local (voir `.env.example`) et dans les *GitHub Actions secrets* en prod : `TELEGRAM_TOKEN`, `TELEGRAM_CHAT_ID`, `GMAIL_USER`, `GMAIL_APP_PASSWORD`, `GMAIL_TO`, `DEEPSEEK_API_KEY`.
+
+**Analyse IA** (`analyzer.py`) : score chaque annonce via l'API DeepSeek (`requests` brut, pas de SDK — même philosophie que `notifier.py` pour Telegram). Sans `DEEPSEEK_API_KEY`, l'analyse est désactivée en fail-safe : les annonces sont notifiées sans score plutôt que bloquées.
+
+**Déclenchement du scraping** : cron-job.org (externe, appelle `workflow_dispatch` toutes les heures) est le déclencheur principal ; le cron natif GitHub Actions n'est qu'un filet de sécurité peu fréquent et décalé de la minute `:00` — un vrai backup horaire ferait tourner deux runs quasi simultanés et provoquerait des conflits de push sur `data/*.json` (donc des doublons de notif Telegram, cf. `.github/workflows/scraper.yml`). Ne pas repasser ce cron à une cadence horaire sans repenser la dédup.

@@ -12,7 +12,7 @@ Le code et l'architecture sont décrits dans `CLAUDE.md` et `README.md`.
 - [x] Testé en réel : `python3 main.py --dry-run` fonctionne (187 annonces
       récupérées → 3 pertinentes lors du test)
 - [x] Workflow GitHub Actions (`.github/workflows/scraper.yml`)
-- [x] Dépôt git initialisé et poussé sur https://github.com/genotquentin-hue/scanvelo (privé)
+- [x] Dépôt git initialisé et poussé sur https://github.com/genotquentin-hue/scanvelo (public, avec balise `noindex` sur la page web pour rester discret)
 
 ## ✅ Configuration des accès (fait)
 
@@ -46,15 +46,18 @@ Le code et l'architecture sont décrits dans `CLAUDE.md` et `README.md`.
 - [x] Fichiers `seen_ids.json` et `recent.json` mis à jour et poussés automatiquement
 
 **🚀 Bot opérationnel !**
-- Scraping : **toutes les heures** (cron-job.org → `workflow_dispatch`) + backup cron GitHub Actions `0 7-20 * * *`
+- Scraping : **toutes les heures** (cron-job.org → `workflow_dispatch`) + backup cron GitHub Actions peu fréquent et décalé (`37 8,12,16,20 * * *`)
 - Récap email : **chaque jour à 6h UTC** (8h Bruxelles)
 
-### 6. Fiabilité du déclenchement (fait en partie)
-- [x] Cron GitHub Actions simplifié : `0 7-20 * * *` (backup horaire)
+### 6. Fiabilité du déclenchement (fait)
 - [x] Créer un PAT GitHub (fine-grained, Actions read/write, repo `scanvelo`)
 - [x] Configurer cron-job.org : POST vers l'API GitHub toutes les heures (8h–21h Bruxelles)
       URL : `https://api.github.com/repos/genotquentin-hue/scanvelo/actions/workflows/scraper.yml/dispatches`
       Body : `{"ref":"main"}` — Headers : `Authorization`, `Accept`, `X-GitHub-Api-Version`, `Content-Type`
+- [x] Cron GitHub Actions passé de horaire à 4x/jour, décalé de la minute `:00` — un vrai
+      backup horaire faisait tourner deux runs quasi simultanés à chaque heure (même
+      cadence que cron-job.org), ce qui causait des conflits de push sur `data/*.json`
+      et donc des doublons de notif Telegram (2026-07-12)
 
 ## 🛠 Confort (optionnel)
 - [ ] Éviter de retaper le token à chaque `git push` : configurer SSH **ou** un credential helper git
@@ -72,11 +75,11 @@ Le code et l'architecture sont décrits dans `CLAUDE.md` et `README.md`.
       → ouvre directement l'édition du fichier sur GitHub (2 clics)
 
 ### Page HTML de suivi (tableau de bord)
-- [ ] GitHub Actions génère un `report.html` à chaque scraping et le committe
-- [ ] Hébergé sur **GitHub Pages** (repo privé → gratuit avec GitHub Pro ~4€/mois,
-      ou repo public avec balise `noindex` pour rester discret)
-- [ ] Favoris et statuts (contacté / en attente / acheté) stockés en `localStorage`
-      → pas de backend nécessaire
+- [x] `index.html` à la racine, alimenté par `data/top5.json` et `data/recent.json`
+- [x] Hébergé sur **GitHub Pages** : https://genotquentin-hue.github.io/scanvelo/
+      (repo public, balise `noindex` sur la page pour rester discret)
+- [x] Favoris et statuts (bouton "Retirer" du top5) stockés en `localStorage`
+      → pas de backend nécessaire (limite : ne persiste pas entre appareils/navigateurs)
 
 ## ⚠️ Notes
 - Le token GitHub utilisé pour le 1er push doit avoir les scopes **`repo` + `workflow`**.

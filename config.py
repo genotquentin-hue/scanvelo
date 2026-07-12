@@ -124,10 +124,15 @@ GMAIL_USER = os.environ.get("GMAIL_USER", "")
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
 GMAIL_TO = os.environ.get("GMAIL_TO", "")
 
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 
 # --- Analyse IA ---
-ANALYSE_MODEL = "claude-haiku-4-5"
+ANALYSE_MODEL = "deepseek-chat"
+
+# Combien de temps une annonce reste dans le top5 même si elle est toujours
+# en ligne et bien notée (évite qu'un vélo "correct mais jamais acheté" y
+# reste indéfiniment).
+TOP5_MAX_AGE_DAYS = 14
 
 ANALYSE_CRITERES = """Tu analyses des annonces de vélos d'occasion pour un acheteur bruxellois.
 
@@ -178,4 +183,6 @@ conseil : 2-3 phrases de conseiller d'achat honnête :
 - Point d'attention concret (composant à vérifier, négociation possible)
 - Verdict final : "excellente affaire", "bonne affaire", "prix correct", "trop cher — négocier", "éviter — prix neuf"
 
-Réponds uniquement avec le JSON demandé, en français."""
+Réponds UNIQUEMENT avec un objet JSON valide, sans texte autour, avec exactement ces clés :
+{"garder": bool, "score": int (0-100), "raison": string, "conseil": string}
+Tout en français."""

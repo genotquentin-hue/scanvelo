@@ -3,8 +3,13 @@ name: Bike Monitor
 # Les heures cron sont en UTC. Bruxelles = UTC+1 (hiver) / UTC+2 (été).
 on:
   schedule:
-    # Scraping toutes les heures en backup (cron-job.org est le déclencheur principal)
-    - cron: "0 7-20 * * *"
+    # Filet de sécurité si cron-job.org (déclencheur principal, toutes les
+    # heures à :00) ne se déclenche pas pendant un moment. Volontairement
+    # peu fréquent et décalé de la minute :00 : un vrai "backup" horaire
+    # ferait tourner deux runs quasi simultanés à chaque heure, ce qui
+    # provoque des conflits de push (cf. commit 3a408c6) et donc des
+    # doublons de notif Telegram quand le push perdant n'est jamais persisté.
+    - cron: "37 8,12,16,20 * * *"
   workflow_dispatch:        # permet de lancer manuellement depuis l'onglet Actions
 
 # Évite que deux exécutions tournent en même temps (sinon conflits de git push).
@@ -33,7 +38,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
 
       - name: Committer les annonces vues (si changement)
         run: |

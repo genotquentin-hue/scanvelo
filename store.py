@@ -10,7 +10,13 @@ from pathlib import Path
 
 import requests
 
-from config import RECENT_PATH, RECENT_RETENTION_HOURS, SEEN_IDS_PATH, TOP5_PATH
+from config import (
+    RECENT_PATH,
+    RECENT_RETENTION_HOURS,
+    SEEN_IDS_PATH,
+    TOP5_MAX_AGE_DAYS,
+    TOP5_PATH,
+)
 
 
 def load_seen_ids(path: Path = SEEN_IDS_PATH) -> set[str]:
@@ -106,13 +112,25 @@ def is_listing_online(url: str) -> bool:
 
 
 def update_top5(new_kept: list[dict], dry_run: bool = False) -> None:
-    """Met à jour le top 5 : retire les annonces hors ligne, ajoute les nouvelles, garde les 5 meilleurs scores."""
+    """Met à jour le top 5 : retire les annonces hors ligne ou expirées, ajoute les nouvelles, garde les 5 meilleurs scores."""
     top5 = load_top5()
+    now = datetime.now(timezone.utc)
 
-    # Vérifier que les entrées actuelles sont encore en ligne
+    # Vérifier que les entrées actuelles sont encore en ligne et pas trop vieilles.
+    # Une annonce reste au max TOP5_MAX_AGE_DAYS dans le top5, même si elle est
+    # toujours en ligne et bien notée : évite qu'un vélo "correct mais jamais
+    # acheté" y reste indéfiniment.
     still_online = []
     for l in top5:
-        if is_listing_online(l["url"]):
+        # `added_at` absent (fichier existant avant l'ajout de ce champ) :
+        # on considère l'entrée comme fraîche plutôt que de vider le top5 d'un coup.
+        added_at = l.get("added_at") or now.isoformat()
+        l = {**l, "added_at": added_at}
+
+        age_days = (now - datetime.fromisoformat(added_at)).days
+        if age_days >= TOP5_MAX_AGE_DAYS:
+            print(f"  [top5] retirée (expirée après {TOP5_MAX_AGE_DAYS}j) : {l['title']}")
+        elif is_listing_online(l["url"]):
             still_online.append(l)
         else:
             print(f"  [top5] retirée (hors ligne) : {l['title']}")
@@ -132,6 +150,7 @@ def update_top5(new_kept: list[dict], dry_run: bool = False) -> None:
                 "score": analyse.get("score", 0),
                 "raison": analyse.get("raison", ""),
                 "conseil": analyse.get("conseil", ""),
+                "added_at": now.isoformat(),
             })
 
     still_online.sort(key=lambda x: x.get("score", 0), reverse=True)

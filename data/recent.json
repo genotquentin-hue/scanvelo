@@ -1,23 +1,5 @@
 [
   {
-    "id": "m2418880495",
-    "source": "2ememain",
-    "title": "VTC TREK7.5 FX 28\" DEORE LX état nickel 340€048981/3734",
-    "description": "Merci de bien lire l&#39;annonce avant de prendre contact avec moi. *Certaines des réponses à vos questions pourraient s&#39;y trouver. * Je n&#39;ai pas le temps de répondre aux messages",
-    "price_cents": 34000,
-    "price_type": "FIXED",
-    "price_raw": "340 €",
-    "location": "Bruxelles",
-    "latitude": 50.85524004255,
-    "longitude": 4.3631410143508,
-    "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2418880495-vtc-trek7-5-fx-28-deore-lx-etat-nickel-340-048981-3734",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/78b693af-ad15-4969-80b7-4c4f366dadf5?rule=ecg_mp_eps$_82.jpg",
-    "posted_at": "Aujourd'hui",
-    "_analyse": null,
-    "seen_at": "2026-07-10T08:07:37.577900+00:00"
-  },
-  {
     "id": "m2419320025",
     "source": "2ememain",
     "title": "VTC TREK7.5 FX 28\" DEORE LX état nickel 340€048981/3734",
@@ -70,5 +52,28 @@
     "posted_at": "Aujourd'hui",
     "_analyse": null,
     "seen_at": "2026-07-11T20:15:14.238878+00:00"
+  },
+  {
+    "id": "m2419799548",
+    "source": "2ememain",
+    "title": "VTC TREK7.5 FX 28\" DEORE LX état nickel 340€048981/3734",
+    "description": "Merci de bien lire l&#39;annonce avant de prendre contact avec moi. *Certaines des réponses à vos questions pourraient s&#39;y trouver. * Je n&#39;ai pas le temps de répondre aux messages",
+    "price_cents": 34000,
+    "price_type": "FIXED",
+    "price_raw": "340 €",
+    "location": "Bruxelles",
+    "latitude": 50.85524004255,
+    "longitude": 4.3631410143508,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2419799548-vtc-trek7-5-fx-28-deore-lx-etat-nickel-340-048981-3734",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/e6180b4d-3709-4c24-98f0-8bf167bed7ac?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 40,
+      "raison": "Vélo hybride Trek FX série 7.5, taille non mentionnée mais compatible avec 28 pouces probablement M ou L. Pas de mention de freins, mais équipé Deore LX, probablement à patins. Pas de porte-bagages mentionné, pneus standard. Prix très bas, bon pour le budget.",
+      "conseil": "Prix neuf estimé ~1300€, décote ~26% du neuf → excellente affaire. Vérifier taille (173 cm = M 54-56 cm, 28 pouces ok). Freins à patins sous pluie bruxelloise à améliorer éventuellement. Bon vélo pour vélotaf avec guidon plat, mais moins polyvalent pour gravel. Verdict : excellente affaire."
+    },
+    "seen_at": "2026-07-13T07:08:10.576546+00:00"
   }
 ]

@@ -21,5 +21,28 @@
       "conseil": "Prix neuf estimé ~900-1000€ (modèle Trek FX 7.5 ancien). Décote : 340/1000=34%, excellente affaire en prix. Attention : vérifier l'usure des jantes (freins patins) et des pneus. Le vélo est correct pour vélotaf, mais moins adapté gravel ; si l'acheteur accepte le guidon plat, c'est une bonne affaire solide."
     },
     "seen_at": "2026-07-16T14:42:25.747379+00:00"
+  },
+  {
+    "id": "m2420976772",
+    "source": "2ememain",
+    "title": "Vélo hybride Trek FX 7.5 - Taille M (17.5\") - Bon état.",
+    "description": "Vélo hybride/vtc léger trek fx 7.5 (Idéal vélotaf ou ville).taille : 17.5 Pouces / taille m (pour cycliste de 1m65 à 1m75)vitesse : 27 vitesses (3 plateaux avant, idéal pour les côtes)dérailleur : shi",
+    "price_cents": 25000,
+    "price_type": "MIN_BID",
+    "price_raw": "À partir de 250 €",
+    "location": "Tervuren",
+    "latitude": 50.821640135639,
+    "longitude": 4.5243525257309,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2420976772-velo-hybride-trek-fx-7-5-taille-m-17-5-bon-etat",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/bc10aa23-6b65-425f-95a0-e999c44c2dbc?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 55,
+      "raison": "Vélo hybride à guidon plat, taille M (17.5\") adaptée à 1m65-1m75, freins à patins, pas de disques, budget sous 1000€.",
+      "conseil": "Ce modèle Trek FX 7.5 neuf coûtait environ 800€. Prix demandé 250€ soit 31% du neuf → excellente affaire. Points d'attention : vérifier l'état des patins et des roulements. Verdict : excellente affaire pour un vélotaf fiable, mais moins polyvalent pour le gravel (guidon plat, pneus fins)."
+    },
+    "seen_at": "2026-07-16T20:07:31.945308+00:00"
   }
 ]

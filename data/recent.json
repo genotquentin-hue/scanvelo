@@ -44,5 +44,23 @@
       "conseil": "Scott Speedster Gravel 10 neuf coûte environ 2000 €. Prix demandé non indiqué (à débattre), mais si négocié vers 800-1000 €, bonne affaire (<50%). Vérifier taille cadre (M idéal) et trace de frottement. Excellente affaire si ~800 €."
     },
     "seen_at": "2026-07-24T07:07:55.659273+00:00"
+  },
+  {
+    "id": "m2423994979",
+    "source": "2ememain",
+    "title": "Trek FX3",
+    "description": "En parfait état. Entretenu avec factures d&#39;un atelier de réparation de vélos. Vendu pour cause de déménagement à l&#39;étranger.",
+    "price_cents": 50000,
+    "price_type": "FIXED",
+    "price_raw": "500 €",
+    "location": "Kraainem",
+    "latitude": 50.845408518638,
+    "longitude": 4.4713311863791,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2423994979-trek-fx3",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/7c35a820-4ea1-4e7c-a2ee-9d95eb4c5357?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": null,
+    "seen_at": "2026-07-25T16:07:55.506702+00:00"
   }
 ]

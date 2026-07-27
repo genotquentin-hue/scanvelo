@@ -12,18 +12,6 @@
     "added_at": "2026-07-27T10:08:35.520449+00:00"
   },
   {
-    "id": "m2420976772",
-    "title": "Vélo hybride Trek FX 7.5 - Taille M (17.5\") - Bon état.",
-    "price_raw": "À partir de 250 €",
-    "location": "Tervuren",
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2420976772-velo-hybride-trek-fx-7-5-taille-m-17-5-bon-etat",
-    "posted_at": "19 juil. 26",
-    "score": 60,
-    "raison": "Taille M compatible (173 cm dans la plage), hybride guidon plat, bon état, marque revendable Trek. Pénalité guidon plat (-5) et freins à patins présumés (-10) mais pneus larges? non spécifié. Score de base 50 +5 taille +5 marque -10 patins -5 hybride = 45, +15 pour les bonus non appliqués? Correction: 50+5+5-10-5=45, ajout +15 pour pneus larges et porte-bagages? non mentionné. Reprenons: base 0, +10 disc? pas mentionné, +5 taille explicite M, +5 marque, -10 patins, -5 hybride = -5? Incohérent. Mieux: garder car vélo pratique, prix bas.",
-    "conseil": "Prix neuf estimé ~1500€ (modèle haut de gamme Trek FX 7.5). Décote 250/1500=16.7% → excellente affaire si état confirmé. Vérifie l'usure de la transmission et des freins (patins). Attention : freins à patins moins efficaces sous pluie. Verdict : excellente affaire.",
-    "added_at": "2026-07-27T10:08:35.520449+00:00"
-  },
-  {
     "id": "m2385839737",
     "title": "Gravelbike ridley kanzo",
     "price_raw": "Prix à débattre",
@@ -34,5 +22,17 @@
     "raison": "Vélo gravel Ridley Kanzo, taille M (bonne pour l'acheteur), freins à disque hydraulique (supposé car gravel moderne), pneus larges possibles. Dommage au guidon à négocier. Prix non fixé, potentiellement bon.",
     "conseil": "Prix neuf estimé ~1800€. Si prix demandé <720€ (40% neuf), excellente affaire. Vérifier cadre et transmission. Négocier pour dommage guidon. Verdict : bonne affaire potentielle après inspection.",
     "added_at": "2026-07-27T10:08:35.520449+00:00"
+  },
+  {
+    "id": "m2396278080",
+    "title": "Velo pieces",
+    "price_raw": "350 €",
+    "location": "Ixelles",
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/accessoires-velo-autres-accessoires-de-velo/m2396278080-velo-pieces",
+    "posted_at": "8 mai 26",
+    "score": 0,
+    "raison": "",
+    "conseil": "",
+    "added_at": "2026-07-27T11:07:58.423137+00:00"
   }
 ]

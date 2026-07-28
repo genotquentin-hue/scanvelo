@@ -44,5 +44,28 @@
       "conseil": "Prix neuf estimé ~800-900 € (Trek FX2 disc). Décote : 550/850 ≈ 65% → prix correct. Négocier à 500 € serait une bonne affaire. Vérifier que les freins sont bien à disque et que la taille M est adaptée (géométrie hybride Trek). Verdict : prix correct."
     },
     "seen_at": "2026-07-28T14:07:30.589969+00:00"
+  },
+  {
+    "id": "m2425106063",
+    "source": "2ememain",
+    "title": "Fiets",
+    "description": "Trek fx2 in nieuwe staat met slot van abus nieuwprijs met slot 988 euro aankoop sept 24 heeft in totaal max 150km gereden maat medium",
+    "price_cents": 0,
+    "price_type": "FAST_BID",
+    "price_raw": "Prix à débattre",
+    "location": "Liedekerke +Deel Borchtlombeek",
+    "latitude": 50.866518390774,
+    "longitude": 4.0930722807216,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2425106063-fiets",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/2ef5c257-a662-4852-a287-52bc5317aed2?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 75,
+      "raison": "Gardé : hybride guidon plat Trek FX2, taille M, état comme neuf, très faible kilométrage, prix à négocier. Pénalité guidon plat (-5) mais nombreux bonus : disques hydrauliques (10), porte-bagages compatible (5), taille M (5), marque revendable (5), pneus larges 35 mm+ (5).",
+      "conseil": "Prix neuf estimé : 950 € (vélo + antivol). Prix demandé non spécifié, mais si négocié autour de 380 € ou moins (<40%) → excellente affaire ; jusqu'à 570 € (60%) bonne affaire ; au-delà de 700 € (75%) trop cher. Vérifie l'usure des pneus et le fonctionnement des freins. Verdict : à négocier fermement vu le neuf récent."
+    },
+    "seen_at": "2026-07-28T17:07:40.606962+00:00"
   }
 ]

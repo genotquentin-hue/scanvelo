@@ -21,5 +21,28 @@
       "conseil": "Prix neuf estimé ~800 € (FX2 équipé). Décote 63% → prix correct. Vérifie la taille (doit être M/L pour 173 cm) et si freins disques hydrauliques. Si taille M et disques, bonne affaire. Sinon, négocie vers 400 €."
     },
     "seen_at": "2026-07-28T13:08:25.916256+00:00"
+  },
+  {
+    "id": "m2425044520",
+    "source": "2ememain",
+    "title": "Medium équipé du Trek FX2",
+    "description": "Ce vélo est neuf et a parcouru moins de 100 km et a toujours été à l&#39;intérieur. Il possède également un antivol de vélo abus, comme indiqué dans le devis, j&#39;ai également acheté le vélo",
+    "price_cents": 55000,
+    "price_type": "FIXED",
+    "price_raw": "550 €",
+    "location": "Liedekerke +Deel Borchtlombeek",
+    "latitude": 50.866518390774,
+    "longitude": 4.0930722807216,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2425044520-medium-equipe-du-trek-fx2",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/458c47de-f665-477e-a4b3-3633f4c8327b?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 65,
+      "raison": "Vélo hybride à guidon plat (moins polyvalent que gravel/cyclocross), mais taille M correspond à l'acheteur, freins à disque (probablement mécaniques, non hydrauliques), pneus d'origine ~32 mm, pas de porte-bagages mentionné. Bon état quasi neuf.",
+      "conseil": "Prix neuf estimé ~800-900 € (Trek FX2 disc). Décote : 550/850 ≈ 65% → prix correct. Négocier à 500 € serait une bonne affaire. Vérifier que les freins sont bien à disque et que la taille M est adaptée (géométrie hybride Trek). Verdict : prix correct."
+    },
+    "seen_at": "2026-07-28T14:07:30.589969+00:00"
   }
 ]

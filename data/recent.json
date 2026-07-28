@@ -1,66 +1,25 @@
 [
   {
-    "id": "m2423374477",
+    "id": "m2425031387",
     "source": "2ememain",
-    "title": "VTC TREK7.5 FX 28\" DEORE LX état nickel 340€048981/3734",
-    "description": "Merci de bien lire l&#39;annonce avant de prendre contact avec moi. *Certaines des réponses à vos questions pourraient s&#39;y trouver. * Je n&#39;ai pas le temps de répondre aux messages",
-    "price_cents": 34000,
-    "price_type": "FIXED",
-    "price_raw": "340 €",
-    "location": "Bruxelles",
-    "latitude": 50.85524004255,
-    "longitude": 4.3631410143508,
-    "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2423374477-vtc-trek7-5-fx-28-deore-lx-etat-nickel-340-048981-3734",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/660f52cd-193d-4325-a9c7-69fd67d27da9?rule=ecg_mp_eps$_82.jpg",
-    "posted_at": "Aujourd'hui",
-    "_analyse": {
-      "garder": true,
-      "score": 60,
-      "raison": "Hybride à guidon plat, taille non mentionnée mais probablement M (28 pouces), freins à patins, bon état.",
-      "conseil": "Le Trek FX 7.5 neuf coûtait environ 400 €. À 340 €, la décote est de 85 % du neuf, soit trop cher pour un vélo d'entrée de gamme d'occasion vieux de plusieurs années. Vérifiez l'usure de la transmission et négociez fermement vers 200-250 €. Sinon, passez votre chemin."
-    },
-    "seen_at": "2026-07-23T21:45:29.629888+00:00"
-  },
-  {
-    "id": "m2423451442",
-    "source": "2ememain",
-    "title": "Scott Speedster Gravel",
-    "description": "Vélo scott speedster gravel 10 couleur savana green. Le vélo est de 2025, en parfait état. A noter, une trace de frottement sur l avant à cause de frottements avec une pochette. Cassette et pédalier s",
-    "price_cents": 0,
-    "price_type": "FAST_BID",
-    "price_raw": "Prix à débattre",
-    "location": "Drogenbos",
-    "latitude": 50.793250809056,
-    "longitude": 4.3094998426114,
-    "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2423451442-scott-speedster-gravel",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/94d89956-3614-4a19-98d2-1a8dbd7d0f2c?rule=ecg_mp_eps$_82.jpg",
-    "posted_at": "Aujourd'hui",
-    "_analyse": {
-      "garder": true,
-      "score": 60,
-      "raison": "Vélo gravel avec guidon drop, freins à disque hydrauliques, pneus larges (supposés), taille non précisée mais compatible potentiellement. Bon profil vélotaf + gravel, état quasi neuf.",
-      "conseil": "Scott Speedster Gravel 10 neuf coûte environ 2000 €. Prix demandé non indiqué (à débattre), mais si négocié vers 800-1000 €, bonne affaire (<50%). Vérifier taille cadre (M idéal) et trace de frottement. Excellente affaire si ~800 €."
-    },
-    "seen_at": "2026-07-24T07:07:55.659273+00:00"
-  },
-  {
-    "id": "m2423994979",
-    "source": "2ememain",
-    "title": "Trek FX3",
-    "description": "En parfait état. Entretenu avec factures d&#39;un atelier de réparation de vélos. Vendu pour cause de déménagement à l&#39;étranger.",
+    "title": "Trek fx2 equipped herenfiets",
+    "description": "Dit is een trek fx2 equipped hij is dus volledig uitgerust met lichten reflectors spatborden enz de fiets heeft niet meer als 50 km gereden en heeft altijd binnen gestaan. Er zit ook een abus slot op",
     "price_cents": 50000,
     "price_type": "FIXED",
     "price_raw": "500 €",
-    "location": "Kraainem",
-    "latitude": 50.845408518638,
-    "longitude": 4.4713311863791,
+    "location": "Liedekerke +Deel Borchtlombeek",
+    "latitude": 50.866518390774,
+    "longitude": 4.0930722807216,
     "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2423994979-trek-fx3",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/7c35a820-4ea1-4e7c-a2ee-9d95eb4c5357?rule=ecg_mp_eps$_82.jpg",
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2425031387-trek-fx2-equipped-herenfiets",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/4d5e0a12-ff65-4dbf-9cf0-2401cdd8f5a3?rule=ecg_mp_eps$_82.jpg",
     "posted_at": "Aujourd'hui",
-    "_analyse": null,
-    "seen_at": "2026-07-25T16:07:55.506702+00:00"
+    "_analyse": {
+      "garder": true,
+      "score": 45,
+      "raison": "Vélo hybride guidon plat, taille non mentionnée, freins non spécifiés (probablement mécaniques disque ou patins). Bon état et équipé, mais moins polyvalent que le profil gravel souhaité.",
+      "conseil": "Prix neuf estimé ~800 € (FX2 équipé). Décote 63% → prix correct. Vérifie la taille (doit être M/L pour 173 cm) et si freins disques hydrauliques. Si taille M et disques, bonne affaire. Sinon, négocie vers 400 €."
+    },
+    "seen_at": "2026-07-28T13:08:25.916256+00:00"
   }
 ]

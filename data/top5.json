@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "m2425106063",
+    "title": "Fiets",
+    "price_raw": "Prix à débattre",
+    "location": "Liedekerke +Deel Borchtlombeek",
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-pour-homme/m2425106063-fiets",
+    "posted_at": "Avant-hier",
+    "score": 75,
+    "raison": "Vélo hybride Trek FX2, taille M, quasi neuf, correspond à l'usage vélotaf (mais pas gravel drop), genre non spécifié, musculaire.",
+    "conseil": "Prix à débattre, mais neuf à 988€ avec accessoires, un prix de 500-600€ serait une excellente affaire (50-60%). Vérifier l'état des pneus et des freins (disques hydrauliques ? Si oui, bonus). Hybride à guidon plat, moins polyvalent que gravel drop, mais idéal pour vélotaf. Négocier si proche de 700€.",
+    "added_at": "2026-08-02T17:46:24.547466+00:00"
+  },
+  {
+    "id": "m2425044520",
+    "title": "Medium équipé du Trek FX2",
+    "price_raw": "550 €",
+    "location": "Liedekerke +Deel Borchtlombeek",
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2425044520-medium-equipe-du-trek-fx2",
+    "posted_at": "Aujourd'hui",
+    "score": 70,
+    "raison": "Vélo hybride Trek FX2, taille Medium équivalente à M, compatible avec un usage vélotaf, mais guidon plat et freins à disque mécaniques, pas idéal pour le gravel.",
+    "conseil": "Le Trek FX2 neuf coûte environ 700 €, ce vélo à 550 € représente une décote de 78% du neuf, donc trop cher pour de l'occasion. Vérifiez l'état réel et négociez vers 450-500 €. Le vélo est correct pour le vélotaf mais ne convient pas pour le gravel avec son guidon plat; envisagez plutôt un cyclocross ou gravel d'occasion.",
+    "added_at": "2026-08-02T17:46:24.547466+00:00"
+  },
+  {
+    "id": "m2426706709",
+    "title": "zgan Ridley x trail. prachtige fiets.",
+    "price_raw": "À partir de 500 €",
+    "location": "Weerde",
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2426706709-zgan-ridley-x-trail-prachtige-fiets",
+    "posted_at": "Aujourd'hui",
+    "score": 68,
+    "raison": "Vélo gravel Ridley X Trail avec groupe Shimano 105, freins à disque (non précisé hydraulique, probablement mécaniques), taille S mais le vendeur précise qu'il taille grand et convient à 176 cm, donc compatible avec 173 cm. Pas de signe rédhibitoire.",
+    "conseil": "Le prix de 500 € est attractif pour un Ridley X Trail, dont le prix neuf se situe généralement entre 1200 et 1800 € selon l'année et l'équipement. Cela représente environ 28-40% du neuf, une excellente affaire si l'état est bon. Vérifiez l'état des roues (Fulcrum) et des disques de frein, ainsi que l'usure de la transmission. Pensez à tester le vélo sur pavés et chemins pour valider le confort. Verdict : excellente affaire.",
+    "added_at": "2026-08-02T17:46:24.547466+00:00"
+  },
+  {
+    "id": "m2421910339",
+    "title": "Cannondale CAADX – Allround Cyclocrosser / roadbike maat54",
+    "price_raw": "650 €",
+    "location": "Grimbergen",
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2421910339-cannondale-caadx-allround-cyclocrosser-roadbike-maat54",
+    "posted_at": "19 juil. 26",
+    "score": 68,
+    "raison": "Vélo de cyclocross Cannondale CAADX, taille 54 cm indiquée (compatible avec 173 cm), guidon drop et freins à disque probablement hydrauliques (fiable sous la pluie), marque réputée revendable, bon état mentionné. Taille 54 cm = M, bonus.",
+    "conseil": "Le CAADX neuf vaut environ 1200-1400 € (modèle aluminium). À 650 €, la décote est de 46-54%, ce qui est une bonne affaire. Vérifiez l'état des disques (hydrauliques ?), la transmission, et la présence de porte-bagages (absent ici). Si tout est sain, c'est un excellent choix pour le vélotaf et le gravel. Verdict : bonne affaire.",
+    "added_at": "2026-08-02T17:46:24.547466+00:00"
+  }
+]

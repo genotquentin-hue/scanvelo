@@ -1,25 +1,25 @@
 [
   {
-    "id": "m2427281504",
+    "id": "m2428345885",
     "source": "2ememain",
-    "title": "Cube",
-    "description": "Cube nuroad pro",
-    "price_cents": 0,
-    "price_type": "FAST_BID",
-    "price_raw": "Prix à débattre",
-    "location": "Brussel",
-    "latitude": 50.85524004255,
-    "longitude": 4.3631410143508,
+    "title": "Trek FX 2 - Satin Lithium Grey",
+    "description": "Fiets in zeer goede staat, bijna niet mee gereden. Moet weg aangezien ik deze niet meer gebruik. Maat m - geschikt voor een lichaamslengte van 1,65 tot 1,75 meter.",
+    "price_cents": 55000,
+    "price_type": "MIN_BID",
+    "price_raw": "À partir de 550 €",
+    "location": "Wolvertem",
+    "latitude": 50.973144112864,
+    "longitude": 4.3091218335465,
     "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-vtt-mountainbikes/m2427281504-cube",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/71fe7dd9-0b68-459d-9b9d-8e9a18a1790f?rule=ecg_mp_eps$_82.jpg",
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2428345885-trek-fx-2-satin-lithium-grey",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/0980e3c4-9ca3-49a4-be10-6ac26cbbdc05?rule=ecg_mp_eps$_82.jpg",
     "posted_at": "Aujourd'hui",
     "_analyse": {
       "garder": true,
       "score": 60,
-      "raison": "Modèle gravel polyvalent de bonne réputation, taille non précisée mais le Cube Nuroad Pro est généralement en tailles standards ; l'absence de mention électrique ou féminine le rend compatible.",
-      "conseil": "Le prix n'est pas indiqué, mais le Cube Nuroad Pro neuf coûte environ 1500-1800 €. Vérifiez l'état des pneus, de la transmission et des freins. Si le prix demandé est inférieur à 40% du neuf (soit <600 €), c'est une excellente affaire ; entre 600-900 €, bonne affaire. Assurez-vous que la taille est bien un M (54-56 cm) pour votre profil."
+      "raison": "Vélo hybride à guidon plat Trek FX 2, taille M correspondant à la morphologie (165-175 cm), bon état, non électrique et non spécifiquement féminin, adapté au vélotaf.",
+      "conseil": "Ce Trek FX 2 est un hybride fiable, mais avec un guidon plat, il est moins polyvalent pour le gravel. Prix de 550 € à comparer au neuf (environ 700-800 €) : cela représente 69-79% du neuf, donc un prix correct à légèrement élevé. Vérifiez l'usure des pneus et des freins, et négociez vers 450-500 €. Pour votre usage mixte, préférez un cyclocross si possible."
     },
-    "seen_at": "2026-08-04T04:07:46.054482+00:00"
+    "seen_at": "2026-08-07T08:07:54.346777+00:00"
   }
 ]

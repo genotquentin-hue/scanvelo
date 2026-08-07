@@ -21,5 +21,28 @@
       "conseil": "Ce Trek FX 2 est un hybride fiable, mais avec un guidon plat, il est moins polyvalent pour le gravel. Prix de 550 € à comparer au neuf (environ 700-800 €) : cela représente 69-79% du neuf, donc un prix correct à légèrement élevé. Vérifiez l'usure des pneus et des freins, et négociez vers 450-500 €. Pour votre usage mixte, préférez un cyclocross si possible."
     },
     "seen_at": "2026-08-07T08:07:54.346777+00:00"
+  },
+  {
+    "id": "m2428527425",
+    "source": "2ememain",
+    "title": "Trek Fx 5 sport",
+    "description": "Goed onderhouden gravel fiets van trek fx5 sport. Uitgerust met mavic wielen en continental 4 season voor op de weg verkoop deze omdat ik een fiets kan leasen.",
+    "price_cents": 100000,
+    "price_type": "FIXED",
+    "price_raw": "1000 €",
+    "location": "Alsemberg",
+    "latitude": 50.747472420733,
+    "longitude": 4.3274597607827,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2428527425-trek-fx-5-sport",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/8be6e1cf-ba84-4a4c-8910-5544e3be4e9f?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 55,
+      "raison": "Modèle Trek FX hybride, taille non mentionnée, freins non précisés (probablement à disque hydraulique sur ce modèle), bon pour vélotaf mais guidon plat moins polyvalent.",
+      "conseil": "Le Trek FX 5 Sport neuf coûte environ 1700 €, ici à 1000 € cela fait ~59% du neuf, une bonne affaire. Vérifiez l'état des pneus Continental 4 Season et des roues Mavic. Attention : taille non précisée, demandez la taille exacte du cadre (idéalement M ou 54 cm)."
+    },
+    "seen_at": "2026-08-07T15:07:24.012810+00:00"
   }
 ]

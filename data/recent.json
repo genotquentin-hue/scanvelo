@@ -44,5 +44,28 @@
       "conseil": "Le Trek FX 5 Sport neuf coûte environ 1700 €, ici à 1000 € cela fait ~59% du neuf, une bonne affaire. Vérifiez l'état des pneus Continental 4 Season et des roues Mavic. Attention : taille non précisée, demandez la taille exacte du cadre (idéalement M ou 54 cm)."
     },
     "seen_at": "2026-08-07T15:07:24.012810+00:00"
+  },
+  {
+    "id": "m2428825399",
+    "source": "2ememain",
+    "title": "Specialized diverge E5 comp maat 56",
+    "description": "Specialized diverge e5 comp maat 56 goede staat",
+    "price_cents": 99900,
+    "price_type": "FIXED",
+    "price_raw": "999 €",
+    "location": "Ternat",
+    "latitude": 50.873247165984,
+    "longitude": 4.1800543495593,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2428825399-specialized-diverge-e5-comp-maat-56",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/e07ad610-2361-4212-a3f3-49bbde699ac3?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 80,
+      "raison": "Vélo gravel polyvalent de bonne marque, taille 56 mentionnée (léger grand pour 173 cm mais utilisable), pas de signe rédhibitoire, état bon.",
+      "conseil": "Prix demandé 999 € pour un Diverge E5 Comp neuf environ 1300 € (neuf en périodes de promo), soit ~77% du neuf, donc un peu cher pour l'occasion ; négocier vers 800-850 €. Vérifiez l'état des câbles, freins (hydrauliques ou mécaniques ?) et la présence de portes-bagages. En dessous de 780 € ce serait une excellente affaire, sinon prix correct après négociation."
+    },
+    "seen_at": "2026-08-08T13:07:17.048173+00:00"
   }
 ]

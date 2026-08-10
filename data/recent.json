@@ -1,51 +1,5 @@
 [
   {
-    "id": "m2428345885",
-    "source": "2ememain",
-    "title": "Trek FX 2 - Satin Lithium Grey",
-    "description": "Fiets in zeer goede staat, bijna niet mee gereden. Moet weg aangezien ik deze niet meer gebruik. Maat m - geschikt voor een lichaamslengte van 1,65 tot 1,75 meter.",
-    "price_cents": 55000,
-    "price_type": "MIN_BID",
-    "price_raw": "À partir de 550 €",
-    "location": "Wolvertem",
-    "latitude": 50.973144112864,
-    "longitude": 4.3091218335465,
-    "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2428345885-trek-fx-2-satin-lithium-grey",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/0980e3c4-9ca3-49a4-be10-6ac26cbbdc05?rule=ecg_mp_eps$_82.jpg",
-    "posted_at": "Aujourd'hui",
-    "_analyse": {
-      "garder": true,
-      "score": 60,
-      "raison": "Vélo hybride à guidon plat Trek FX 2, taille M correspondant à la morphologie (165-175 cm), bon état, non électrique et non spécifiquement féminin, adapté au vélotaf.",
-      "conseil": "Ce Trek FX 2 est un hybride fiable, mais avec un guidon plat, il est moins polyvalent pour le gravel. Prix de 550 € à comparer au neuf (environ 700-800 €) : cela représente 69-79% du neuf, donc un prix correct à légèrement élevé. Vérifiez l'usure des pneus et des freins, et négociez vers 450-500 €. Pour votre usage mixte, préférez un cyclocross si possible."
-    },
-    "seen_at": "2026-08-07T08:07:54.346777+00:00"
-  },
-  {
-    "id": "m2428527425",
-    "source": "2ememain",
-    "title": "Trek Fx 5 sport",
-    "description": "Goed onderhouden gravel fiets van trek fx5 sport. Uitgerust met mavic wielen en continental 4 season voor op de weg verkoop deze omdat ik een fiets kan leasen.",
-    "price_cents": 100000,
-    "price_type": "FIXED",
-    "price_raw": "1000 €",
-    "location": "Alsemberg",
-    "latitude": 50.747472420733,
-    "longitude": 4.3274597607827,
-    "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2428527425-trek-fx-5-sport",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/8be6e1cf-ba84-4a4c-8910-5544e3be4e9f?rule=ecg_mp_eps$_82.jpg",
-    "posted_at": "Aujourd'hui",
-    "_analyse": {
-      "garder": true,
-      "score": 55,
-      "raison": "Modèle Trek FX hybride, taille non mentionnée, freins non précisés (probablement à disque hydraulique sur ce modèle), bon pour vélotaf mais guidon plat moins polyvalent.",
-      "conseil": "Le Trek FX 5 Sport neuf coûte environ 1700 €, ici à 1000 € cela fait ~59% du neuf, une bonne affaire. Vérifiez l'état des pneus Continental 4 Season et des roues Mavic. Attention : taille non précisée, demandez la taille exacte du cadre (idéalement M ou 54 cm)."
-    },
-    "seen_at": "2026-08-07T15:07:24.012810+00:00"
-  },
-  {
     "id": "m2428825399",
     "source": "2ememain",
     "title": "Specialized diverge E5 comp maat 56",
@@ -67,5 +21,28 @@
       "conseil": "Prix demandé 999 € pour un Diverge E5 Comp neuf environ 1300 € (neuf en périodes de promo), soit ~77% du neuf, donc un peu cher pour l'occasion ; négocier vers 800-850 €. Vérifiez l'état des câbles, freins (hydrauliques ou mécaniques ?) et la présence de portes-bagages. En dessous de 780 € ce serait une excellente affaire, sinon prix correct après négociation."
     },
     "seen_at": "2026-08-08T13:07:17.048173+00:00"
+  },
+  {
+    "id": "m2429462666",
+    "source": "2ememain",
+    "title": "Merida silex maat Medium gravelbike",
+    "description": "De fiets heeft een nieuwe ketting nodig. Nieuwe casette, tandwiel 1x en tandwiel 2x bij geleverd. Voorderailleur ook bij geleverd. Afgemonteerd met shimano sora.",
+    "price_cents": 35000,
+    "price_type": "MIN_BID",
+    "price_raw": "À partir de 350 €",
+    "location": "Sterrebeek",
+    "latitude": 50.856552390011,
+    "longitude": 4.5107129599661,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2429462666-merida-silex-maat-medium-gravelbike",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/ceaaa84b-2c49-462d-b4a3-8afc996d3f69?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 70,
+      "raison": "Vélo gravel polyvalent, taille M (compatible 173 cm), sans signe électrique ou féminin, avec quelques pièces à remplacer mais globalement en état correct.",
+      "conseil": "Prix neuf estimé à 1200 €, le prix demandé (350 €) représente environ 29% du neuf, excellente affaire malgré les réparations nécessaires. Vérifiez l'état du cadre et des roues, le coût des pièces fournies (cassette, dérailleur) et le montage. Si le cadre est sain, c'est une excellente affaire. Sinon, négociez en fonction des réparations."
+    },
+    "seen_at": "2026-08-10T11:07:45.071670+00:00"
   }
 ]

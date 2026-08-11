@@ -1,28 +1,5 @@
 [
   {
-    "id": "m2428825399",
-    "source": "2ememain",
-    "title": "Specialized diverge E5 comp maat 56",
-    "description": "Specialized diverge e5 comp maat 56 goede staat",
-    "price_cents": 99900,
-    "price_type": "FIXED",
-    "price_raw": "999 €",
-    "location": "Ternat",
-    "latitude": 50.873247165984,
-    "longitude": 4.1800543495593,
-    "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2428825399-specialized-diverge-e5-comp-maat-56",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/e07ad610-2361-4212-a3f3-49bbde699ac3?rule=ecg_mp_eps$_82.jpg",
-    "posted_at": "Aujourd'hui",
-    "_analyse": {
-      "garder": true,
-      "score": 80,
-      "raison": "Vélo gravel polyvalent de bonne marque, taille 56 mentionnée (léger grand pour 173 cm mais utilisable), pas de signe rédhibitoire, état bon.",
-      "conseil": "Prix demandé 999 € pour un Diverge E5 Comp neuf environ 1300 € (neuf en périodes de promo), soit ~77% du neuf, donc un peu cher pour l'occasion ; négocier vers 800-850 €. Vérifiez l'état des câbles, freins (hydrauliques ou mécaniques ?) et la présence de portes-bagages. En dessous de 780 € ce serait une excellente affaire, sinon prix correct après négociation."
-    },
-    "seen_at": "2026-08-08T13:07:17.048173+00:00"
-  },
-  {
     "id": "m2429462666",
     "source": "2ememain",
     "title": "Merida silex maat Medium gravelbike",
@@ -44,5 +21,28 @@
       "conseil": "Prix neuf estimé à 1200 €, le prix demandé (350 €) représente environ 29% du neuf, excellente affaire malgré les réparations nécessaires. Vérifiez l'état du cadre et des roues, le coût des pièces fournies (cassette, dérailleur) et le montage. Si le cadre est sain, c'est une excellente affaire. Sinon, négociez en fonction des réparations."
     },
     "seen_at": "2026-08-10T11:07:45.071670+00:00"
+  },
+  {
+    "id": "m2429934002",
+    "source": "2ememain",
+    "title": "Cannondale CAADX (Gravel) - Taille 54",
+    "description": "Cannondale caadx (gravel) - taille 54 je vends ce cannondale caadx, un montage très propre avec un super look rétro/moderne. L&#39;assortiment des pneus à flancs marrons, de la guidoline et de la",
+    "price_cents": 69000,
+    "price_type": "FIXED",
+    "price_raw": "690 €",
+    "location": "Linkebeek",
+    "latitude": 50.767943454035,
+    "longitude": 4.3454436238647,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2429934002-cannondale-caadx-gravel-taille-54",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/841dcf53-30a6-4ae5-8bfc-d94794ec95b8?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 68,
+      "raison": "Vélo gravel/cyclocross avec freins à disque hydrauliques, taille 54 correspond à un M, pneus larges, marque premium très revendable, pas de signe rédhibitoire.",
+      "conseil": "Le prix de 690 € semble correct pour un CAADX, souvent vendu neuf autour de 1500-1800 €. La décote est d'environ 40-45% du neuf, donc une bonne affaire. Vérifiez l'état des câbles si les freins sont hydrauliques, et négociez si possible car la demande est modérée. Verdict : bonne affaire."
+    },
+    "seen_at": "2026-08-11T16:07:18.055912+00:00"
   }
 ]

@@ -44,5 +44,51 @@
       "conseil": "Le prix de 690 € semble correct pour un CAADX, souvent vendu neuf autour de 1500-1800 €. La décote est d'environ 40-45% du neuf, donc une bonne affaire. Vérifiez l'état des câbles si les freins sont hydrauliques, et négociez si possible car la demande est modérée. Verdict : bonne affaire."
     },
     "seen_at": "2026-08-11T16:07:18.055912+00:00"
+  },
+  {
+    "id": "m2430012578",
+    "source": "2ememain",
+    "title": "Vélo Triban gravel 520",
+    "description": "à vendre gravel triban 520 en très bon état, bien entretenu et prêt à rouler. Transmission sram apex 11 vitesses freins à disque hydrauliques pneus hutchinson gravel très bon état général aucun souci",
+    "price_cents": 72000,
+    "price_type": "FIXED",
+    "price_raw": "720 €",
+    "location": "Schaerbeek",
+    "latitude": 50.861857255044,
+    "longitude": 4.3859987122908,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2430012578-velo-triban-gravel-520",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/a1234ca9-8521-4dbc-8cf2-0b172ef73eb9?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 78,
+      "raison": "Vélo gravel avec guidon drop, freins à disque hydrauliques, taille non mentionnée (bénéfice du doute), bon état général, correspond au profil.",
+      "conseil": "Le Triban 520 neuf coûte environ 900-1000 €, donc 720 € représente environ 72-80% du neuf, ce qui est un prix correct à légèrement élevé. Vérifiez l'état de la transmission et des pneus, et négociez vers 650-700 € si possible. Verdict : prix correct, avec un peu de négociation ce serait une bonne affaire."
+    },
+    "seen_at": "2026-08-11T20:07:03.744741+00:00"
+  },
+  {
+    "id": "m2430013452",
+    "source": "2ememain",
+    "title": "Vélo Triban gravel 120",
+    "description": "à vendre gravel triban 120, taille m, en très bon état, bien entretenu et prêt à rouler. Transmission 11 vitesses groupe xle freins à disque a disque pneus hutchinson gravel taille m très bon état gén",
+    "price_cents": 52000,
+    "price_type": "FIXED",
+    "price_raw": "520 €",
+    "location": "Schaerbeek",
+    "latitude": 50.861857255044,
+    "longitude": 4.3859987122908,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2430013452-velo-triban-gravel-120",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/abc1fa90-3aef-4578-be14-3b30c509a98c?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 67,
+      "raison": "Gravel polyvalent avec freins à disque, taille M, bon état, prix attractif pour le profil vélotaf+gravel.",
+      "conseil": "Le Triban 120 neuf coûte environ 700-800 €, donc à 520 € (~65-74% du neuf) c'est un prix correct, légèrement au-dessus de la fourchette idéale. Vérifiez l'usure de la transmission et des pneus, et négociez vers 450 € si possible. Excellente affaire si l'état est impeccable, sinon bonne occasion."
+    },
+    "seen_at": "2026-08-11T20:07:03.744741+00:00"
   }
 ]

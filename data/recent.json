@@ -1,51 +1,5 @@
 [
   {
-    "id": "m2429462666",
-    "source": "2ememain",
-    "title": "Merida silex maat Medium gravelbike",
-    "description": "De fiets heeft een nieuwe ketting nodig. Nieuwe casette, tandwiel 1x en tandwiel 2x bij geleverd. Voorderailleur ook bij geleverd. Afgemonteerd met shimano sora.",
-    "price_cents": 35000,
-    "price_type": "MIN_BID",
-    "price_raw": "À partir de 350 €",
-    "location": "Sterrebeek",
-    "latitude": 50.856552390011,
-    "longitude": 4.5107129599661,
-    "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2429462666-merida-silex-maat-medium-gravelbike",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/ceaaa84b-2c49-462d-b4a3-8afc996d3f69?rule=ecg_mp_eps$_82.jpg",
-    "posted_at": "Aujourd'hui",
-    "_analyse": {
-      "garder": true,
-      "score": 70,
-      "raison": "Vélo gravel polyvalent, taille M (compatible 173 cm), sans signe électrique ou féminin, avec quelques pièces à remplacer mais globalement en état correct.",
-      "conseil": "Prix neuf estimé à 1200 €, le prix demandé (350 €) représente environ 29% du neuf, excellente affaire malgré les réparations nécessaires. Vérifiez l'état du cadre et des roues, le coût des pièces fournies (cassette, dérailleur) et le montage. Si le cadre est sain, c'est une excellente affaire. Sinon, négociez en fonction des réparations."
-    },
-    "seen_at": "2026-08-10T11:07:45.071670+00:00"
-  },
-  {
-    "id": "m2429934002",
-    "source": "2ememain",
-    "title": "Cannondale CAADX (Gravel) - Taille 54",
-    "description": "Cannondale caadx (gravel) - taille 54 je vends ce cannondale caadx, un montage très propre avec un super look rétro/moderne. L&#39;assortiment des pneus à flancs marrons, de la guidoline et de la",
-    "price_cents": 69000,
-    "price_type": "FIXED",
-    "price_raw": "690 €",
-    "location": "Linkebeek",
-    "latitude": 50.767943454035,
-    "longitude": 4.3454436238647,
-    "on_country_level": false,
-    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-hommes-velos-de-sport-velo-de-randonnee/m2429934002-cannondale-caadx-gravel-taille-54",
-    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/841dcf53-30a6-4ae5-8bfc-d94794ec95b8?rule=ecg_mp_eps$_82.jpg",
-    "posted_at": "Aujourd'hui",
-    "_analyse": {
-      "garder": true,
-      "score": 68,
-      "raison": "Vélo gravel/cyclocross avec freins à disque hydrauliques, taille 54 correspond à un M, pneus larges, marque premium très revendable, pas de signe rédhibitoire.",
-      "conseil": "Le prix de 690 € semble correct pour un CAADX, souvent vendu neuf autour de 1500-1800 €. La décote est d'environ 40-45% du neuf, donc une bonne affaire. Vérifiez l'état des câbles si les freins sont hydrauliques, et négociez si possible car la demande est modérée. Verdict : bonne affaire."
-    },
-    "seen_at": "2026-08-11T16:07:18.055912+00:00"
-  },
-  {
     "id": "m2430012578",
     "source": "2ememain",
     "title": "Vélo Triban gravel 520",
@@ -90,5 +44,28 @@
       "conseil": "Le Triban 120 neuf coûte environ 700-800 €, donc à 520 € (~65-74% du neuf) c'est un prix correct, légèrement au-dessus de la fourchette idéale. Vérifiez l'usure de la transmission et des pneus, et négociez vers 450 € si possible. Excellente affaire si l'état est impeccable, sinon bonne occasion."
     },
     "seen_at": "2026-08-11T20:07:03.744741+00:00"
+  },
+  {
+    "id": "m2430619936",
+    "source": "2ememain",
+    "title": "Gravier Triban 120",
+    "description": "Vélo en très bon état, taille m",
+    "price_cents": 52000,
+    "price_type": "FIXED",
+    "price_raw": "520 €",
+    "location": "Schaerbeek",
+    "latitude": 50.861857255044,
+    "longitude": 4.3859987122908,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2430619936-gravier-triban-120",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/a5e9dd5f-7964-4c05-b682-804dedbb2683?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 78,
+      "raison": "Taille M correspond, gravel polyvalent, bon état. Pas de mention électrique ou féminin, freins non spécifiés.",
+      "conseil": "Neuf environ 700 €, décote 74% → prix correct. Vérifiez les freins (si disques, bon point) et l'usure de la transmission. Idéal pour vélotaf et chemins, mais prévoyez un porte-bagages compatible."
+    },
+    "seen_at": "2026-08-13T17:42:46.020936+00:00"
   }
 ]

@@ -44,5 +44,28 @@
       "conseil": "Le prix n'est pas spécifié (à débattre), mais ce vélo neuf coûte probablement entre 2500 et 3500 €. S'il est à moins de 1000 €, c'est une excellente affaire (moins de 40%). Vérifier l'état réel malgré les 0 km, la garantie, et les composants exacts. Négocier si le prix demandé dépasse 1500 €."
     },
     "seen_at": "2026-08-17T10:07:38.417217+00:00"
+  },
+  {
+    "id": "m2431869689",
+    "source": "2ememain",
+    "title": "velo gravel CUBE NUROAD 0.V1",
+    "description": "Bonjour, je vends un velo velo cubr nuroad , achete en mars 2026 du magasin urbantrisports (wezembeek-oppem) car je l&#39;utilise très rarement (maximum 10 fois) taille m (173-184cm).",
+    "price_cents": 0,
+    "price_type": "FAST_BID",
+    "price_raw": "Prix à débattre",
+    "location": "Tervuren",
+    "latitude": 50.821640135639,
+    "longitude": 4.5243525257309,
+    "on_country_level": false,
+    "url": "https://www.2ememain.be/v/velos-velomoteurs/velos-velos-de-course/m2431869689-velo-gravel-cube-nuroad-0-v1",
+    "image_url": "https://images.2dehands.com/api/v1/hz-twh-pro-listing/images/e7296392-5483-43ed-bd01-648564a1b76d?rule=ecg_mp_eps$_82.jpg",
+    "posted_at": "Aujourd'hui",
+    "_analyse": {
+      "garder": true,
+      "score": 73,
+      "raison": "Gravel avec guidon drop, disques hydrauliques, taille M correspond au profil, porte-bagages probable (Cube Nuroad est prévu pour), état quasi neuf.",
+      "conseil": "Le Cube Nuroad est un très bon gravel polyvalent. Neuf il vaut environ 2000€ (modèle 2026 haut de gamme). À ce prix débattu, s'il est sous 800€ c'est une excellente affaire, jusqu'à 1200€ correct. Vérifiez la facture d'achat (mars 2026) et l'état des pneus. Négociez si le prix dépasse 1400€ car le neuf est à ~2000€."
+    },
+    "seen_at": "2026-08-17T11:07:30.121644+00:00"
   }
 ]
